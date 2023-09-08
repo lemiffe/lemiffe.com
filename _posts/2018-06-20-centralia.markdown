@@ -26,14 +26,13 @@ Beautiful neighbourhood
 Scattered bricks, crumpled roads.
 Bent pipes releasing toxic gases
 are left to inhabit this land today.
+>
 > One wonders how it all began
 when and how it will all end,
 and what became of the people
 Who lived in the town that was.
 >
 > by Diana M. Helm
-
----
 
 The weather was cloudy, almost threatening to rain. More and more cars arrived at the parking area. A small crowd started to assemble around the stage.
 
@@ -131,7 +130,7 @@ I needed to go down.
 
 Tonight, I concluded. Tonight.
 
----
+--
 
 Given that I was not a resident, nor did I have staff clearance for maintenance or operations, I would have to sneak in.
 
