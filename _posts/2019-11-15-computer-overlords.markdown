@@ -18,7 +18,7 @@ tags:
     - Society
 ---
 
-The track "Methane Dreams (V3)" from my latest album [Antimony](http://www.lemiffe.com/antimony/) contains a section in the middle which is essentially a speech I wrote independently of the song. I later incorporated it into the song as I realised the rhythm and song concept worked well together.
+The track "Methane Dreams (V3)" from my latest album [Antimony](antimony) contains a section in the middle which is essentially a speech I wrote independently of the song. I later incorporated it into the song as I realised the rhythm and song concept worked well together.
 
 I wanted to lay it out here and go a bit more into detail with what I mean with each section, as it could be easy to misinterpret.
 
