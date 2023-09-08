@@ -33,13 +33,9 @@ tags:
 
 Check it out on [Spotify](https://spoti.fi/2FqfOKu), [Apple Music](https://apple.co/2RXGPGu), [Soundcloud](http://bit.ly/karafsc), or YouTube (coming soon).
 
-**You can also stream it right here **(using Soundcloud)**:**
+If you are interested in knowing the story behind the album [click here](karaf-the-making).
 
-[embed]https://soundcloud.com/lemiffe/sets/karaf[/embed]
-
-If you are interested in knowing the story behind the album [click here](https://www.lemiffe.com/karaf-the-making/).
-
-You can [read the lyrics here](http://www.lemiffe.com/karaf-lyrics/), or on each individual song on Soundcloud.
+You can [read the lyrics here](karaf-lyrics), or on each individual song on Soundcloud.
 
 Please let me know what you think about the album 😎
 

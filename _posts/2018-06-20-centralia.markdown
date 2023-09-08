@@ -21,20 +21,17 @@ tags:
     - short story
 ---
 
-<blockquote>
-
-Gone, is the vibrant community
+> Gone, is the vibrant community
 Beautiful neighbourhood
 Scattered bricks, crumpled roads.
 Bent pipes releasing toxic gases
 are left to inhabit this land today.
-
-One wonders how it all began
+> One wonders how it all began
 when and how it will all end,
 and what became of the people
 Who lived in the town that was.
-
--   Diana M. Helm</blockquote>
+>
+> by Diana M. Helm
 
 ---
 
@@ -218,16 +215,14 @@ Then the floor burst open, probably a hundred meters away from me. Out came the 
 
 It probably flew 50 meters into the air before descending, I tried to get up and run, I screamed my lungs out, the ground was still trembling, I couldn't get up.
 
-<blockquote>One wonders how it all began
-when and how it will all end.</blockquote>
+> One wonders how it all began when and how it will all end.
 
 **Note from the editor:**
 
 I would rewrite it from the start entirely in first person:
 
-<blockquote>I’m Patrick. I might be only a meter tall, but that is, after all, the new standard from Genetic Control. You old people would have used up all the space for living by now, if people had been allowed to continue growing to any size they could. You HAVE seen the statistics, right?
-
-What are you doing, are you recording this? Stop doing that, you’ll get us both sanctioned! And don’t use my name either. If you want me to tell you what happened on my shift the other day, I need to stay anonymous. Right?</blockquote>
+> I’m Patrick. I might be only a meter tall, but that is, after all, the new standard from Genetic Control. You old people would have used up all the space for living by now, if people had been allowed to continue growing to any size they could. You HAVE seen the statistics, right?
+What are you doing, are you recording this? Stop doing that, you’ll get us both sanctioned! And don’t use my name either. If you want me to tell you what happened on my shift the other day, I need to stay anonymous. Right?
 
 **Note from the author:**
 

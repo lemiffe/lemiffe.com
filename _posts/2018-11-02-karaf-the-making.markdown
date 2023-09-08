@@ -76,7 +76,7 @@ And this is what led to the release of the album.
 
 It's always a journey but you don't start out thinking "I'm going to make an album", sometimes the start is just a song, or an idea, or an old album that you thought you could improve.
 
-[Click here to check it out](https://www.lemiffe.com/karaf-out-now/) :)
+[Click here to check it out](karaf-out-now) :)
 
 Thanks to everyone that helped out, as well as those who sent me comments, it inspires me to keep going and record new material.
 
