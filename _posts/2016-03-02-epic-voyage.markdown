@@ -41,7 +41,7 @@ New EP is out today! Available this week on Spotify, Apple Music, and most othe
 
 ![Album Cover](assets/media/cover2.jpg)
 
-It's a story about an inter-dimensional space-time travel of an engineer (Matthias), ametalhead (Stijn Van Loo), and a St. Bernard named Bruno.
+It's a story about an inter-dimensional space-time travel of an engineer (Matthias), a metal-head (Stijn Van Loo), and a St. Bernard named Bruno.
 
 Stijn Van Loo happens to be one of the best captains in the airforce, Matthias has proved himself as one of the most creative aerospace engineers in the world, whilst Bruno is an exceptionally smart dog.
 

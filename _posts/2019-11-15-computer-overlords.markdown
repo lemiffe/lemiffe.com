@@ -18,19 +18,18 @@ tags:
     - Society
 ---
 
-The middle section of my track Methane Dreams (V3) from [Antimony](http://www.lemiffe.com/antimony/) is essentially a speech I wrote independently of the song. I later matched them up as I realised they sounded well together and the concept and rhythm matched the speech.
+The track "Methane Dreams (V3)" from my latest album [Antimony](http://www.lemiffe.com/antimony/) contains a section in the middle which is essentially a speech I wrote independently of the song. I later incorporated it into the song as I realised the rhythm and song concept worked well together.
 
 I wanted to lay it out here and go a bit more into detail with what I mean with each section, as it could be easy to misinterpret.
 
 **Before we jump in, here is the full unedited "speech":**
 
-<blockquote>The problem with humanity is that we can't be trusted; we are the teachers, we are the drivers, we are the leaders, but we are just people. What is it to be human? What is it to think, to be aware of one's self? To realise you are free to move anywhere right now, to leave your home, to slam the door, to break a few plates, to steal a handbag, to maim, to kill; it is this freedom along with a lack of good mentorship, good parenting, and a good basic globally-standardised framework for civic behaviour which scares me. That's why we can't be trusted, we can't be trusted with guns, we can't be trusted with financial decisions, we can't be trusted with our lives nor the lives of others, we can't be trusted with our future. 
-> 
-> **This rabbit hole ends with computers:**
-> 
-> We need computer overlords, for a while. We need a standardised system of mentorship until humanity is ready to make big decisions such as "should we allow guns?", "should we allow people to take all these pills?", "should we close our borders and set up walls?". Walls won't stop chaos; the chaos is within, the chaos is in each and every one of us, waiting to be stirred up until madness erupts. And some keep it quiet, some drown the fear in wine, some realise their power and choose peace and warmth over fear, but some let it loose, claiming lives, leading to strict laws and more fear, leading to paranoia, leading to a police state, leading to repression, leading to unrest, repeating in endless cycles. And only through good mentorship can we be at peace with ourselves, with our neighbours, with humanity, to a degree where we can be trusted again. Stark, but necessary.
-> 
-> </blockquote>
+> The problem with humanity is that we can't be trusted; we are the teachers, we are the drivers, we are the leaders, but we are just people. What is it to be human? What is it to think, to be aware of one's self? To realise you are free to move anywhere right now, to leave your home, to slam the door, to break a few plates, to steal a handbag, to maim, to kill;
+it is this freedom along with a lack of good mentorship, good parenting, and a good basic globally-standardised framework for civic behaviour which scares me. That's why we can't be trusted, we can't be trusted with guns, we can't be trusted with financial decisions, we can't be trusted with our lives nor the lives of others, we can't be trusted with our future.
+This rabbit hole ends with computers:
+We need computer overlords, for a while. We need a standardised system of mentorship until humanity is ready to make big decisions such as "should we allow guns?", "should we allow people to take all these pills?", "should we close our borders and set up walls?". Walls won't stop chaos; the chaos is within, the chaos is in each and every one of us, waiting to be stirred up until madness erupts.
+And some keep it quiet, some drown the fear in wine, some realise their power and choose peace and warmth over fear, but some let it loose, claiming lives, leading to strict laws and more fear, leading to paranoia, leading to a police state, leading to repression, leading to unrest, repeating in endless cycles.
+And only through good mentorship can we be at peace with ourselves, with our neighbours, with humanity, to a degree where we can be trusted again. Stark, but necessary.
 
 **Background:**
 
@@ -58,9 +57,7 @@ Maybe that would lead to slightly less chaos, less murder, less confusion, less 
 
 **Let's analyse the "speech" in more detail:**
 
-<blockquote>The problem with humanity is that we can't be trusted; we are the teachers, we are the drivers, we are the leaders, but we are just people.
-> 
-> </blockquote>
+> The problem with humanity is that we can't be trusted; we are the teachers, we are the drivers, we are the leaders, but we are just people.
 
 We have more power than we think we have. Each profession holds more responsibilities than it would seem. That said, you must think of each person, regardless of what they do, as an intelligent being similar to yourself, just on a different trajectory, and each of these people could have a world of mad ideas going on in their brains, we might have completely different views on things, so we much respect.
 
@@ -74,9 +71,7 @@ You understand people can be on radically different paths, and become curious an
 
 Coming back to "_we are the drivers_"... We literally are at the wheel, what is to stop us ramming into a crowd (as has happened before)? Basic but fulfilling education on the aforementioned topics would lead to less of these situations, as people will not only more aware, but will deeply understand the consequences of their actions on other humans that are just trying to get by.
 
-<blockquote>What is it to be human? What is it to think, to be aware of one's self? To realise you are free to move anywhere right now, to leave your home, to slam the door, to break a few plates, to steal a handbag, to maim, to kill
-> 
-> </blockquote>
+> What is it to be human? What is it to think, to be aware of one's self? To realise you are free to move anywhere right now, to leave your home, to slam the door, to break a few plates, to steal a handbag, to maim, to kill
 
 Here I am simply elaborating further on this. We hold incredible power, and it is scary once you realise you can do anything.
 
@@ -90,9 +85,7 @@ We can remain static, but we are already here, and if we can't do anything about
 
 That thought (inspired by something similar I heard on a video on YouTube) caused a cascade of thoughts over the following couple of years that led to this "speech".
 
-<blockquote>it is this freedom along with a lack of good mentorship, good parenting, and a good basic globally-standardised framework for civic behaviour which scares me. That's why we can't be trusted, we can't be trusted with guns, we can't be trusted with financial decisions, we can't be trusted with our lives nor the lives of others, we can't be trusted with our future. 
-> 
-> </blockquote>
+> it is this freedom along with a lack of good mentorship, good parenting, and a good basic globally-standardised framework for civic behaviour which scares me. That's why we can't be trusted, we can't be trusted with guns, we can't be trusted with financial decisions, we can't be trusted with our lives nor the lives of others, we can't be trusted with our future. 
 
 What I am saying here is that we keep making the same mistakes; not only at a macro level where nations can't agree, some implement policies to limit, sometimes with the backing of the people, sometimes against their wills. Other nations are more liberal. There is no consensus on drugs, weapons, criminal law, etc.
 
@@ -100,9 +93,7 @@ However the point I want to make here is at an individual level. We are erratic,
 
 In other words, trustworthiness should be inherent, we should all assume that each and every person around us is accountable and has received the same basic education about civility, courteousness, politeness and attitude, to a degree where we can be fearless towards one another, upholding hospitality and empathy.
 
-<blockquote>This rabbit hole ends with computers: We need computer overlords, for a while. 
-> 
-> </blockquote>
+> This rabbit hole ends with computers: We need computer overlords, for a while.
 
 I am not talking about AI. I am talking about a global set of standards and education, enforced by computers, which every human worldwide must go through before "freedom" is given to him/her.
 
@@ -112,24 +103,20 @@ By freedom I don't mean enforcing its non-free individuals via oppression... I s
 
 I am not talking about the standardised education system in the US either. I don't think we should standardise education and tests in subjects like history, geography, mathematics, physics, computer science, economy, biology, or music & arts. Instead I believe those should still be taught at a regional or personal level; but some things should be inherent to society, some things apply to all of us.
 
-<blockquote>We need a standardised system of mentorship until humanity is ready to make big decisions such as "should we allow guns?", "should we allow people to take all these pills?", "should we close our borders and set up walls?". Walls won't stop chaos; the chaos is within, the chaos is in each and every one of us, waiting to be stirred up until madness erupts.
-> 
-> </blockquote>
+> We need a standardised system of mentorship until humanity is ready to make big decisions such as "should we allow guns?", "should we allow people to take all these pills?", "should we close our borders and set up walls?". Walls won't stop chaos; the chaos is within, the chaos is in each and every one of us, waiting to be stirred up until madness erupts.
 
 We fear terror. We fear invaders. We fear immigrants. We fear losing our jobs. We fear change.
 
 Most of these are external factors, but threats can come equally as often from the inside. Remember, we are all on different paths, each and every one of us with different levels of education, each of us more or less confused about where we are going and why we are doing things... It only takes a bit of pushing to stir the pot and send us on a rampage.
 
-<blockquote>some keep it quiet, some drown the fear in wine, some realise their power and choose peace and warmth over fear, but some let it loose, claiming lives, leading to strict laws and more fear, leading to paranoia, leading to a police state, leading to repression, leading to unrest, repeating in endless cycles. And only through good mentorship can we be at peace with ourselves, with our neighbours, with humanity, to a degree where we can be trusted again. Stark, but necessary.
-> 
-> </blockquote>
+> some keep it quiet, some drown the fear in wine, some realise their power and choose peace and warmth over fear, but some let it loose, claiming lives, leading to strict laws and more fear, leading to paranoia, leading to a police state, leading to repression, leading to unrest, repeating in endless cycles. And only through good mentorship can we be at peace with ourselves, with our neighbours, with humanity, to a degree where we can be trusted again. Stark, but necessary.
 
 It's not the many but the few that are the issue.
 
 It just takes one mad man with a few rifles and a few hundred bullets to create chaos. It just takes a few hijackers to cause destruction and hundreds of deaths. It just takes a few words to change a confused, insecure and anxious person's attitude, for better or for worse.
 
-We need a base-line.
+We need a baseline.
 
 **Addendum:**
 
-Some of what I said here might be obvious to you, maybe it's just standard knowledge, or maybe you learned a thing or two. I hope at the very least it helped explain some of my thoughts in that song. I firmly believe we all absorb knowledge in slightly different ways. Even though I barely learned a thing in civics class in primary school, I feel I finally learned a thing or two using a different learning approach. I feel given the internet, and vast information on how we communicate and learn, computers could craft a better, personalised base-line education system that we can all benefit from.
+Some of what I said here might be obvious to you, maybe it's just standard knowledge, or maybe you learned a thing or two. I hope at the very least it helped explain some of my thoughts in that song. I firmly believe we all absorb knowledge in slightly different ways. Even though I barely learned a thing in civics class in primary school, I feel I finally learned a thing or two using a different learning approach. I feel given the internet, and vast information on how we communicate and learn, computers could craft a better, personalised baseline education system that we can all benefit from.
