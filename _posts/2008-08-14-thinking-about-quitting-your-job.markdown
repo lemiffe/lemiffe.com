@@ -36,7 +36,7 @@ You may think that you might be a very good resource, that your capable of doing
 
 Theres a point of equillibrium here that businesses must seek: Put you in a position of comfort, where you earn the salary you wish, but continue to work for the business, in a position that represents a moderate expense for them, which will keep both of you happy. Unfortunately, we are never happy with what we have.
 
-[![](assets/media/alone.jpg)](assets/media/alone.jpg)
+![image](assets/media/alone.jpg)
 
 So many times we find ourselves in this position in which we want a higher salary, but we're afraid the administration will bounce us off, we also want a higher position, but maybe the business isn't in that great a shape to offer it to us, or maybe they have other "better" candidates.
 

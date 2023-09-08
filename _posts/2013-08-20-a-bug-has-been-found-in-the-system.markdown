@@ -32,7 +32,7 @@ tags:
     - versions
 ---
 
-[![http://www.flickr.com/photos/73003003@N07/7866585876/in/pool-freeuse/](assets/media/7866585876_0ddc01421d_z-500x332.jpg)](assets/media/7866585876_0ddc01421d_z.jpg)**The past couple of years have been really _really_ hectic**. Snowden leaked sensitive information, the Eurozone has on-going economic problems, the UK and USA are virtually police states, the NSA and GCHQ are spying on most internet users, there has been widespread protests across the world (Brazil, UK, USA, Siria, etc... "we are the 99%" anyone?). Just last week Glenn Greenwald was detained for 9 hours at Heathrow airport as being a "terrorism suspect". What on earth is happening?
+![image](assets/media/7866585876_0ddc01421d_z-500x332.jpg). Just last week Glenn Greenwald was detained for 9 hours at Heathrow airport as being a "terrorism suspect". What on earth is happening?
 
 **A bug has been found**, or more like hundreds of bugs, and they have been unfixed, even though the issues have been raised.
 

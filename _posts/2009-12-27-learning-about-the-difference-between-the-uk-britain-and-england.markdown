@@ -35,7 +35,7 @@ I have done some research and also developed a small image that exemplifies what
 -   **Great Britain** is an **island **lying to the northwest of Continental Europe.
 -   **England **is a **country **that is part of the United Kingdom.
 
-![image](/assets/media/difference.png)
+![image](assets/media/difference.png)
 
 I hope this may have been of use to you or somebody else with this question.
 

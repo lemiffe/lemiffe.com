@@ -16,7 +16,7 @@ tags:
     - sky
 ---
 
-[![Juan Dominguez](assets/media/design3small-300x225.jpg)](assets/media/design3small.jpg)
+![image](assets/media/design3small-300x225.jpg)
 
 The atmosphere ringed on for ages, with purple-green horizons staring back at me. And the eyes grew from deep within the trees. I knew I was there, at the right place, at the right time.
 
