@@ -29,6 +29,8 @@ tags:
     - youtube
 ---
 
+![image](assets/media/youtube.jpg)
+
 Dear YouTube,
 
 You have done so much to enable creators to make and share exciting videos, whether that be mini series, cooking shows, films, music videos, news, podcasts, top 10s, documentaries, you name it.
