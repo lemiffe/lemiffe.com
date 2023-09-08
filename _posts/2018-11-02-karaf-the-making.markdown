@@ -1,7 +1,7 @@
 ---
 author: Lemiffe
 comments: true
-date: 1980-01-01 00:00:00+00:00
+date: 2018-11-02 00:00:00+00:00
 layout: post
 link: https://www.lemiffe.com/karaf-the-making/
 slug: karaf-the-making

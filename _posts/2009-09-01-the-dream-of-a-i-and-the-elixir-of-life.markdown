@@ -11,39 +11,12 @@ categories:
     - Technology
 tags:
     - AI
-    - artificial
-    - being
-    - believers
     - bowman
-    - cares
-    - dangerous
     - davidoff
-    - dream
-    - elixir
-    - eyes
-    - ideas
-    - intelligence
-    - ivan
-    - knowledge
-    - knox
-    - Life
-    - matt
-    - microphone
     - msnp
     - newscientist
     - Nic Fleming
     - Noel Sharkey
-    - office
-    - protocol
-    - robot
-    - sentient
-    - sherri
-    - soldiers
-    - speakers
-    - speech
-    - talk
-    - thoughts
-    - unintelligent
 ---
 
 Today I read an article about A.I. on NewScientist called "[Why AI is a Dangerous Dream](http://www.newscientist.com/article/mg20327231.100-noel-sharkey-ai-is-a-dangerous-dream.html?full=true)". I thought the article was partially biased. In my perspective the interviewee, a robotics expert named Noel Sharkey has lost faith in AI which can be confirmed by a statement on the article that reads:
@@ -78,6 +51,6 @@ So we have also got that point covered. We can interact hundreds of miles away a
 
 I am aware that these are not true applications of AI as a whole. But we have strived in different areas, creating artificial limbs that move like an animal's paw or a human's leg or arm. We have created programs that can re-compile themselves to allow different circumstances to occur, or to "evolve" as we would say. We have created robots that can detect surfaces and objects and go around them. We have stuck computers on coat racks with webcams, microphones and speakers to be able to "live" in an office from hundreds of miles away. We have created chatter bots that are close to beating the turing tests. We have achieved a lot in speech understanding and generation in the past years.
 
-This leads me to say that even though we have not achieved a **real **strong AI system, we are certainly on the path to producing great results, and who knows, maybe in a few years we will have discovered the pathway that will lead us to develop a remarkable electronic clone of us.
+This leads me to say that even though we have not achieved a **real** strong AI system, we are certainly on the path to producing great results, and who knows, maybe in a few years we will have discovered the pathway that will lead us to develop a remarkable electronic clone of us.
 
 I believe alchemists have ever pursued the dream of living forever. But A.I. has given us the dream of creating intelligent copies of us. I believe that this dream will eventually allow us to download our minds into intelligent beings, technically allowing us to live forever. And while we might have not found the philosophers stone, we will have found the elixir of life.

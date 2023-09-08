@@ -1,7 +1,7 @@
 ---
 author: Lemiffe
 comments: true
-date: 1980-01-01 00:00:00+00:00
+date: 2018-11-07 00:00:00+00:00
 layout: post
 link: https://www.lemiffe.com/karaf-out-now/
 slug: karaf-out-now
