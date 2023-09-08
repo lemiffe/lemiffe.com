@@ -39,7 +39,7 @@ New EP is out today! Available this week on Spotify, Apple Music, and most othe
 
 ## What is the story behind it?
 
-![Album Cover](assets/media/cover2-375x375.jpg)
+![Album Cover](assets/media/cover2.jpg)
 
 It's a story about an inter-dimensional space-time travel of an engineer (Matthias), ametalhead (Stijn Van Loo), and a St. Bernard named Bruno.
 
