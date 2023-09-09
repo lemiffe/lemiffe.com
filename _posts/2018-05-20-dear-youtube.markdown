@@ -29,7 +29,7 @@ tags:
     - youtube
 ---
 
-![image](assets/media/youtube.jpg)
+![image]({{ site.baseurl }}/assets/media/youtube.jpg)
 
 Dear YouTube,
 

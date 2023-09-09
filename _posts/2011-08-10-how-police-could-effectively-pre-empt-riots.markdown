@@ -34,7 +34,7 @@ Over the past few days we have seen violence escalate dramatically in different 
 
 I have been attached to the BBC News coverage through their website and I saw an interesting tweet posted there:
 
-[![Tweeted by Hannah Robertson in Gloucester](assets/media/preempt.png)](http://www.bbc.co.uk/news/uk-14449675)At first I thought. Pre-empt where the next bout would take place? How on earth would they manage that?
+[![Tweeted by Hannah Robertson in Gloucester]({{ site.baseurl }}/assets/media/preempt.png)](http://www.bbc.co.uk/news/uk-14449675)At first I thought. Pre-empt where the next bout would take place? How on earth would they manage that?
 
 But it actually isn't that hard. They have a mountain of CCTV data, they have a good amount of servers, all they lack is a bit of artificial intelligence.
 
@@ -44,7 +44,7 @@ The IT team of the police should annotate the direction of each CCTV camera, inc
 
 Afterwards, the CCTV cameras should be plotted on a 2D map, as vectors (pointing in the direction they are facing, with the length of the vector being the distance the camera covers).
 
-![Map Plot of London](assets/media/map.png)Additionally, all points of interest should be mapped, such as shopping centres, residential areas, commercial areas, shops with high-value items, and shops with low-value items. Most of this data can be readily obtained from Google Maps, amongst other online maps. This data can be extracted and annotated with the values we require (such as the value of the goods sold per area, etc.)
+![Map Plot of London]({{ site.baseurl }}/assets/media/map.png)Additionally, all points of interest should be mapped, such as shopping centres, residential areas, commercial areas, shops with high-value items, and shops with low-value items. Most of this data can be readily obtained from Google Maps, amongst other online maps. This data can be extracted and annotated with the values we require (such as the value of the goods sold per area, etc.)
 
 If you think this is a very hard task, it is not. A very simple way of doing this would be to go to the website (or ask by phone) of each major retailer and chain for a list of addresses of their shops. Google Maps can plot them on a map using a spreadsheet as input. There you go, simple as that!
 

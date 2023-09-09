@@ -36,7 +36,7 @@ A few years ago I dreamt of being able to have all this connectivity, lets say, 
 
 If I made a rundown or a graph explaining the connectivity between social media sites I currently have, it would grow too large, or the connections would not exactly be easy to draw. \* Update: Well I've decided to draw it anyway:
 
-[caption id="attachment_438" align="aligncenter" width="300" caption="My Network Map"]![My Network Map](assets/media/Network-Map1-300x227.png)](assets/media/Network-Map1.png)[/caption]
+[caption id="attachment_438" align="aligncenter" width="300" caption="My Network Map"]![My Network Map]({{ site.baseurl }}/assets/media/Network-Map1-300x227.png)]({{ site.baseurl }}/assets/media/Network-Map1.png)[/caption]
 
 For instance: My Youtube is posting to facebook, google reader, twitter and two of my blogs. One of those blogs is lemiffe.com which when receiving a post will alert ping.fm which will then release a post of my new blog post to facebook, twitter, my blog at blogger, myspace, google talk's status, and quite a few other sites.
 

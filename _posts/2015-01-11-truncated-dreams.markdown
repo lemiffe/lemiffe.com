@@ -75,7 +75,7 @@ A month later I started the process of relocating to a small office (instead of
 
 I dreamt of a beautifully decorated place, with a pool table and a large screen TV. I dreamt of people hacking around on Arduinos and Raspberry PIs in their spare time. I dreamt of small teams collaborating in great ways. I dreamt of a place that would be fun, engaging, inspiring and challenging.
 
-![computers](assets/media/computers.jpg)
+![computers]({{ site.baseurl }}/assets/media/computers.jpg)
 
 Instead, the workload started building up. I started making regular trips to Mexico City and Guadalajara, and I didn't have enough time to finish the project in time, heck, I didn't even have a full spec. Requirements kept pouring in, so I decided to hire a couple of people: a developer and a graphic designer. First I found a designer, recently graduated, willing to take a lower pay in exchange for real-world practice. I then published an ad in the newspaper, on university sites, and on LinkedIn, and a few weeks later I made my first development hire. We started out as a motivated team, we had goals (albeit short-term), and we believed in each other.
 
@@ -220,7 +220,7 @@ The trial period was great, I got to know my coworkers and really enjoyed the vi
 
 Yes, I know what you are thinking: Wait, you are indebted, you don't have a place, you barely just secured a job, and now you are going on holiday? Fortunately it was a cheap holiday, we found a great bargain for the flights, and we all chipped in equally for the rent of the camper van. And, well, I got paid for three-week trial period, so I thought it would be a great moment to relax and finally get over the failure of my startup.
 
-![china](assets/media/china.jpg)
+![china]({{ site.baseurl }}/assets/media/china.jpg)
 
 The trip was awesome, cumbersome, interesting, tiring, scenic, problematic, and everything else you'd expect a trip of such magnitude to be.
 

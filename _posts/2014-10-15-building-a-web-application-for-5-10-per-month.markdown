@@ -38,7 +38,7 @@ I started wondering recently if it would be possible to launch such an app, usin
 
 The following is a graph representing my idea for the architecture of such an app, describing the interaction with these services. Most of these are free (except for the purchase of a domain name, Google Apps, and DigitalOcean, which have very accessible plans):
 
-![image](assets/media/SaasMapWebApp.png)
+![image]({{ site.baseurl }}/assets/media/SaasMapWebApp.png)
 
 **The goal of my small research was to verify if it would be possible to:**
 

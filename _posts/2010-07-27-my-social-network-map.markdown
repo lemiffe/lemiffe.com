@@ -23,4 +23,4 @@ Last year I was on about 10 social networks, this year the number has gone up to
 
 Click on the image to see a full-sized version.
 
-![image](assets/media/s.png)
+![image]({{ site.baseurl }}/assets/media/s.png)
