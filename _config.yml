@@ -2,7 +2,7 @@ title: Lemiffe
 tagline: Music, Software, Stories & AI
 description: "Welcome to lemiffe.com, powered by Jekyll and Lanyon, you'll find my legacy blog here as well as links to my main online locations!"
 #url: https://lemiffe.com
-baseurl: 'lemiffe.com'
+baseurl: '/lemiffe.com'
 paginate: 5
 paginate_path: /blog/page:num/
 permalink: /:title
