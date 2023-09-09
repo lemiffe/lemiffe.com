@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      5 Solutions for MySQL Error 1235 &middot; Lemiffe
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/5-solutions-for-mysql-error-1235">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Welcome to lemiffe.com, powered by Jekyll and Lanyon, you'll find my legacy blog here as well as links to my main online locations!</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/"
+      >Home</a
+    >
+
+               
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/about"
+      >About</a
+    >
+                                                            
+
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/blog/"
+      >Legacy Blog</a
+    >
+  </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2023. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Lemiffe</a>
+            <small>Music, Software, Stories & AI</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">5 Solutions for MySQL Error 1235</h1>
+  <span class="post-date">28 Aug 2013</span>
+  <p>I got stuck for hours the other day with this problem. I’ve used triggers for years in SQL Server without a problem, however, in MySQL the implementation is a bit iffy.</p>
+
+<p>One problem I ran into yesterday while trying to <strong>restore a database</strong> was error 1235:</p>
+
+<p>ERROR 1235 (42000) at line 1408: This version of MySQL doesn’t yet support ‘multiple triggers with the same action time and event for one table’</p>
+
+<p>I scoured Google for about an hour, and came to the conclusion that there is multiple reasons this error may appear. I explain these reasons and provide solutions for them below.</p>
+
+<p>First of all, I suggest you get a list of all triggers by running the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;SELECT trigger_schema, trigger_name
+FROM information_schema.triggers
+WHERE trigger_schema = '&lt;span style="color: #339966;"&gt;NAME_OF_YOUR_DATABASE&lt;/span&gt;';&lt;/code&gt;
+</code></pre></div></div>
+
+<p><strong>Reason #1:  You can’t combine both BEFORE/AFTER with INSERT/UPDATE/DELETE</strong></p>
+
+<p><a href="http://technocation.org/files/doc/2010_06_stored_code.pdf">This PDF</a> describes this issue. The problem is simple: You can’t have BEFORE_INSERT and AFTER_INSERT for the same table. You may have been updating a column BEFORE insert and updating some other table AFTER insert with the ID. I suggest you move some of this logic (maybe the BEFORE trigger) to your code.</p>
+
+<p><strong>Reason #2: AFTER_DELETE sometimes fails with error 1235</strong></p>
+
+<p>You should avoid using AFTER_DELETE triggers. Move the logic to a BEFORE_DELETE trigger if you are going to use the OLD variable. No idea why this happens, maybe it is my specific MySQL version.</p>
+
+<p><strong>Reason #3: You can’t have triggers with the same name (duplicate triggers)</strong></p>
+
+<p>Sometimes you get another error code when doing this, but other times you get the same error 1235 with no explanation. Run the “show triggers” query I stated above and look for any triggers with the same name. Always run DROP TRIGGER before creating/modifying a trigger.</p>
+
+<p><strong>Reason #4: You can’t reference the SAME TABLE you are updating/inserting to in a trigger</strong></p>
+
+<p>For example, if you wanted to set the default password for a user through a trigger upon creating a new user record, you might have tried to do this: UPDATE users SET password = ‘newPassword’;</p>
+
+<p>The correct way to do this is to set the variable in the BEFORE_INSERT trigger. Example: SET NEW.password = ‘newPassword’;</p>
+
+<p><strong>Reason #5: When exporting a database (as an SQL script) you may get database definers in the script</strong></p>
+
+<p>In other words, if you export a MySQL database to a .sql file, the actual file may contain things like TRIGGER ‘mydbname’.’trigger_name’. So if you try to restore it to a database with a different name it would fail. I would have expected another error code because the database it is referencing is NOT the one I am restoring to. Anyway, you receive error 1235 for this as well.</p>
+
+<p>Quick fix: Open the .sql file and replace all mentions of <code class="language-plaintext highlighter-rouge">EXPORTED_DB_NAME</code>. with a blank string (i.e. replace with nothing).</p>
+
+<p><strong>Summary / TLDR:</strong></p>
+
+<p>Do not use BEFORE/UPDATE triggers on the same table for a same function (e.g. INSERT). Do not use AFTER_DELETE triggers, use BEFORE_DELETE instead. Do not have duplicate trigger names. Do not reference the same table you are updating or inserting to in the trigger, use OLD and NEW instead with SET instead of a subquery. If you are restoring a database from a backup, check that the backup does not contain mentions to the explicit database name (when restoring to a different database name).</p>
+
+<p>Please remember: When creating an INSERT trigger you can only use the NEW variable, when creating an UPDATE trigger you can use OLD and NEW, and in a DELETE trigger you can only reference OLD.</p>
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/moved-blog-to-github-pages">
+            I moved
+            <small>08 Sep 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/antimony">
+            Antimony
+            <small>15 Nov 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/computer-overlords">
+            Computer Overlords
+            <small>15 Nov 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

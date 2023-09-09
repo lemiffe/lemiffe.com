@@ -1,0 +1,43 @@
+############################
+
+ZZT TUTORIAL 1.0 BY LeMiffe
+
+############################
+
+What is ZZT?
+
+ZZT is an ANSI-based computer game, created in 1991 by Tim Sweeney, of Epic Games (then Epic Megagames), who later designed Unreal. It remains one of the most popular DOS game creation systems. 
+
+ZZT's graphics were obsolete before it was even created; it used the same style of text-mode graphics that Kingdom of Kroz used 4 years earlier. However, ZZT managed to become fairly popular because of its integration of a simple but effective object-oriented scripting language known as ZZT-OOP.
+
+This is a short tutorial on how to start using ZZT in your computer, first of all get ZZT from the site: You can get it from http://zzt.org or http://zztplanetarium.cjb.net.
+Extract the .zip file into a directory called ZZT, when you have all the files in the directory open zzt.exe and then lets start!
+
+Once opened you must select Keyboard or Mouse, I usually use keyboard. Afterwards select color or  monochrome. This will start the default view: A blue screen, which is the introduction screen.
+
+Just press enter, then the main program will appear, press W to change world or E to edit, the E will start the world editor, once started you can make your own worlds, press I first of all and type in the title of the board, there is 2 boards by default, the TitleScreen and the board 1.
+
+Type in a title for board 1, then press enter. Now press B to go to the board selection, and go up one board to the title screen. There you must create a title, it will be what appears before starting to play the game. The player wont appear, there will be a black spot where the player currently is.
+
+Make your title screen using blocks, fading, or just simply text using F4, when you are ready press B again and go to board 1. Now try experimenting with making solid walls, and stuff, now the patterns (P) are all solid, you can not go through them, like the one that looks like a fake wall and the one that looks like a breakable wall, are really solid, the pattern bar looks similar to the following:
+
+[|] [¦] [:] [ ] [=] [ ]
+
+[|] = Solid Wall / Complete
+[¦] = Solid Wall / Broken
+[:] = Solid Wall / Smashed?
+[ ] = Empty Space
+[=] = Line Wall
+[ ] = Press enter over an object 
+      and you can copy it to another 
+      place or stuff like that!
+
+Lets say you dont want to be surrounded by walls, and you want a carpet, then you can press F3, press A for fake, and use X to fill it inside a Solid wall surrounding carefull! it will fill all the screen if there is an exit somewhere in the area you wish to fill, now change color and you can fill it with carpet of diferent colors! Use the different options in F1, F2, and F3 to place things around the board.
+
+I hope you have fun using ZZT, check out http://zzt.org for recent games. Check out http://zztplanetarium.cjb.net for new breakthroughs in the zzt community and updates you may be interested in.
+
+- LeMiffe (AKA Qbmaniac)
+mike@citiria.com
+January, 2002
+
+#################################
