@@ -15,6 +15,8 @@ Hello, it's been a while, I know.
 
 Finally got around to publishing something new :)
 
+![Cover]({{ site.url }}/assets/media/cover_1k.jpg)
+
 The EP is a short one (2 songs), based on Synthwave/Outrun. I composed it on the way to Iași in Romania (and on the way back). I'm currently working on a video for the first song.
 
 Trivia: What are the encoding for the names of the songs?

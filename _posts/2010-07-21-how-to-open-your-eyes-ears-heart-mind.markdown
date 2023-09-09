@@ -23,7 +23,7 @@ tags:
     - stages
 ---
 
-**George Orwell **mentioned all throughout his masterpiece book 'Nineteen eighty four' the thoughts and actions of the proletarians, which are described as ignorant people who can't care less of anything that happens outside their direct daily lives in his book. Ignorance is bliss. Or as "Goldstein" would say, "Ignorance is Strength".
+**George Orwell** mentioned all throughout his masterpiece book 'Nineteen eighty four' the thoughts and actions of the proletarians, which are described as ignorant people who can't care less of anything that happens outside their direct daily lives in his book. Ignorance is bliss. Or as "Goldstein" would say, "Ignorance is Strength".
 
 **But I choose not live my life like that**. Not now, not ever. Can you? I honestly prefer to lead a life in search for information, further knowledge, and culture, while having the possibility of changing my mood, thoughts, and actions based on this data, instead of living a "normal" life in the safety and comfort of ignorance.
 

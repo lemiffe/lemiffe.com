@@ -25,11 +25,9 @@ tags:
     - stop credit
 ---
 
-# Credit is not bad
+**Credit is not bad** - But the way we use it IS!
 
-### But the way we use it IS
-
-Edilberto Salazar, 35, married, with one daughter, is a man that I met over two years ago while working for an IT firm in Mexico. This man owed over $200,000 (£10,000+) pesos to the bank, more than $100,000 (£5,000+) pesos in taxes, plus his mortgage and personal credits at department stores. He is one of those guys that saturates one credit card, then applies for another to which he transfers all his overdue credit from his other card, and so on.
+Edilberto Salazar (name changed), 35, married, with one daughter, is a man that I met over two years ago while working for an IT firm in Mexico. This man owed over $200,000 (£10,000+) pesos to the bank, more than $100,000 (£5,000+) pesos in taxes, plus his mortgage and personal credits at department stores. He is one of those guys that saturates one credit card, then applies for another to which he transfers all his overdue credit from his other card, and so on.
 
 He is just one of many people I have met in several years that has the same problem. Endless calls and letters, harassment, and bad looks from friends and family. The truth is that he is just one in millions caught in the same situation.
 

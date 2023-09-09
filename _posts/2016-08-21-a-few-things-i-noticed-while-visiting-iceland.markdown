@@ -23,6 +23,8 @@ tags:
 
 Here are a few thoughts and things I noticed while visiting Reykjavik, Iceland in 2016. Some of these might serve as travel tips if you are thinking about visiting soon.
 
+![Iceland picture]({{ site.url }}/assets/media/bgpost.jpg)
+
 -   **[Hotdogs are absolutely epic](http://www.cntraveler.com/stories/2014-08-21/the-one-dish-to-eat-in-iceland)**. Someone on a tour mentioned they are actually a danish rip-off, but in Denmark they use red larger sausages apparently. I've seen similar variations in the north of Mexico, but also with larger sausages, and lots of hot sauce.
 -   Most adults and younger people speak English fluently, but older people may not. Bus drivers (in my experience) didn't speak or understand it very well. Taxi drivers, however, seemed well-versed.
 -   Bus tickets are strange; I don't mean the ones you get on the bus, but the small things you get in sets of 10 at candy/corner shops.
@@ -38,15 +40,10 @@ Here are a few thoughts and things I noticed while visiting Reykjavik, Iceland i
 -   They have an app called "[incest blocker](http://www.wired.co.uk/article/iceland-incest-app)", apparently it is (and was even more so the previous century) a big problem, as a nation with a population of only 300K+. One of my tour guides mentioned this, and how it saved her from a potential disaster, quite hilarious.
 -   No Uber? Come on!
 -   **Last, but most important**: They accept credit/debit cards **everywhere**, even American Express!
-
     -   Even on taxis and corner shops
-
     -   Even at low-budget eateries
-
     -   The default seems to be to pay by card; at most bars they would already have the device ready for me to pay before I could even take my bills out
-
     -   They all use the same system, which leads me to believe this is an initiative by the government to facilitate tourism
-
     -   Belgium... I'm looking at you!
 
-Hopefully this post was useful if you are planning an upcoming trip.
+Hopefully this post was useful if you are planning an upcoming trip!

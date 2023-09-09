@@ -17,12 +17,8 @@ tags:
     - spotify
 ---
 
-Hey everyone! I've finally decided to post my latest album here. It is a bit experimental (as usual) combining rock, metal, electronica, and new-age. Most of the comments I've heard are 'this is too strange for me', but I don't mind :)
+Hey everyone! I've finally decided to post my latest EP here. It is a bit experimental (as usual) combining rock, metal, electronica, and new-age. Most of the comments I've heard are 'this is too strange for me', but I don't mind :)
 
-Check it out on Spotify: [Lemiffe – S/Here/There/](http://open.spotify.com/album/5q9CVn0UMMPpmb1Z8jsRuz)
-
-Or listen to the first song on SoundCloud:
-
-https://soundcloud.com/lemiffe/never-sway-matthew
+Check it out on [Spotify](http://open.spotify.com/album/5q9CVn0UMMPpmb1Z8jsRuz)
 
 Enjoy!

@@ -23,7 +23,8 @@ tags:
 
 Over four years ago I started making plans to come to Edinburgh, UK, to study a master degree. Naturally, I did some research into the city beforehand and found out that one of the major local issues was the construction of a tram network that would run from the airport all the way to the city centre.
 
-[caption id="attachment_1187" align="aligncenter" width="500" caption="Edinburgh Trams from the 1900s"]![Edinburgh Trams from the 1900s]({{ site.url }}/assets/media/FILE0033-500x375.jpg)[/caption]
+![Edinburgh trams from the 1900s]({{ site.url }}/assets/media/FILE0033.jpg)
+
 
 I remember reading that a large percentage of the locals opposed the tram system, partly because the bus system is already an excellent travel option, but primarily because of the chaos the construction would cause. By the time I read that, I believe it had already been under construction for quite a while.
 

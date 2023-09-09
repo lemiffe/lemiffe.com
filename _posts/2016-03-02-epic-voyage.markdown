@@ -55,8 +55,6 @@ This album is dedicated to Bruno, may he rest in peace.
 
 ## Listen to the album
 
-**Or watch the video for the main song**
-
-https://www.youtube.com/watch?v=2JpN193k-2s
+**Or watch [the video](https://www.youtube.com/watch?v=2JpN193k-2s) here**
 
 Note: The video has nothing to do with the story, and is basically just me and a good friend playing GTA V over the course of 2-3 hours. Intro scene filmed in Belgium under a bridge.

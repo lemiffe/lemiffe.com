@@ -32,13 +32,13 @@ tags:
     - versions
 ---
 
-![image]({{ site.url }}/assets/media/7866585876_0ddc01421d_z-500x332.jpg). Just last week Glenn Greenwald was detained for 9 hours at Heathrow airport as being a "terrorism suspect". What on earth is happening?
+![image]({{ site.url }}/assets/media/7866585876_0ddc01421d_z.jpg). Just last week Glenn Greenwald was detained for 9 hours at Heathrow airport as being a "terrorism suspect". What on earth is happening?
 
 **A bug has been found**, or more like hundreds of bugs, and they have been unfixed, even though the issues have been raised.
 
 Typically, socio-political changes occur on a massive scale. Democratic republics become dictatorships, whole countries become communist states, just to turn back a few decades later. When a government breaks down, a massive change is sure to ensue.
 
-**So why don't we implement a system of incremental changes to prevent such breakdowns in the first place? Is it really so hard? **
+**So why don't we implement a system of incremental changes to prevent such breakdowns in the first place? Is it THAT hard?**
 
 Most large companies with web products have bug reporting systems or community forums. In some cases the community is involved in developing the changes that are required, which then get pushed to the main code repository. Ubuntu, Google Chrome (Chromium), Wordpress, Eclipse, OpenOffice, Android, and others are examples of this. Some other companies are very open to public opinion and offer bug trackers or forums to track issues, for example: Github, MySQL, etc.
 

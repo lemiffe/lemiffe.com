@@ -17,7 +17,7 @@ tags:
     - tuman
 ---
 
-[caption id="" align="alignleft" width="190" caption="Bones of the Hills - Conn Iggulden"]![Bones of the Hills](http://img1.fantasticfiction.co.uk/images/n54/n271506.jpg)](http://img1.fantasticfiction.co.uk/images/n54/n271506.jpg)[/caption]
+![Bones of the Hills]({{ site.url }}/assets/media/bones.jpg)
 
 I just finished reading Bones of the Hills by Conn Iggulden. It is the 3rd book in the Conqueror Series of Genghis Khan. I would like to share my thought on the book.
 

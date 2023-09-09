@@ -32,8 +32,8 @@ I have done some research and also developed a small image that exemplifies what
 
 -   **The United Kingdom** of Great Britain and Northern Ireland is a **sovereign state** located off the northwestern coast of continental Europe.
 -   **A sovereign state**, commonly simply referred to as a state, is a **political association** with effective internal and external sovereignty over a geographic area and population which is not dependent on, or subject to any other power or state.
--   **Great Britain** is an **island **lying to the northwest of Continental Europe.
--   **England **is a **country **that is part of the United Kingdom.
+-   **Great Britain** is an **island** lying to the northwest of Continental Europe.
+-   **England** is a **country** that is part of the United Kingdom.
 
 ![image]({{ site.url }}/assets/media/difference.png)
 

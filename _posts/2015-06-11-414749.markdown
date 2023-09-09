@@ -22,21 +22,18 @@ tags:
     - world domination
 ---
 
-After three months of work I've finally released** #414749**, my 12th album. The album is a jamboree of genres, albeit not intentionally so. I just let each song take it's style and route based on how it felt, kind of like when writers let the story go on it's way without trying to strictly determine the fate of it's subjects.
+After three months of work I've finally released **#414749**, my 12th album. The album is a jamboree of genres, albeit not intentionally so. I just let each song take it's style and route based on how it felt, kind of like when writers let the story go on it's way without trying to strictly determine the fate of it's subjects.
 
 The result is a bit strange obviously, I've received a few comments like "wow, this is cool, there's a lot of styles in there", to "wow, there's a bit of distortion in there eh?". Some people dislike the fact that I keep meddling with different genres.
 
 So for my next couple of albums I will attempt to do something a bit more consistent.
 
-**I'm releasing this album for free, check it out on [Soundcloud](https://soundcloud.com/lemiffe/sets/414749a/) below:**
+![Album Cover]({{ site.url }}/assets/media/414749.jpg)
 
-https://soundcloud.com/lemiffe/sets/414749a
+**I'm releasing this album for free, check it out on [Soundcloud](https://soundcloud.com/lemiffe/sets/414749a/)!**
 
-**You can also get the album here:**
-
+**You can also listen to it here:**
 -   [Spotify](https://open.spotify.com/album/2ykEjEaWaSB8nVyTbdiP1l)
--   [Zip](https://mega.co.nz/#!kRtwVTCT!3epzauHZFoWy9BkR6MUalqpVTtAh5DsPe8nwh1--s7Q) (256kbps MP3s)
--   [Rdio](http://rd.io/x/Rl6nZzE-C2PJ/)
 -   [Lyrics (zip)](https://mega.co.nz/#!9MUj2aCJ!DTdUfHmXhE_WNTR5LUNgDNOwYmP99PuNlCFjJ24NLUE) or view them on each indivudla track on Soundcloud
 -   [iTunes](https://itunes.apple.com/mx/album/414749/id1003047456?l=en)
 

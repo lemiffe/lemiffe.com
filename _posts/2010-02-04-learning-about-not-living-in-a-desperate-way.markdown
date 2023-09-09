@@ -34,14 +34,14 @@ So I went back home and put it together in the right way, and it turned on witho
 
 His words, however, stuck with me. They not only worked out for my computer problem, but they apply equally to all aspects of life. If something doesn't feel right, then you must be doing it wrong.
 
--   If you eat something that doesn't taste good, you spit it out or stop eating it.
--   If you put your hand too close to the fire you naturally take it away.
--   If you buy something you didn't like you don't (generally) buy it again.
+- If you eat something that doesn't taste good, you spit it out or stop eating it.
+- If you put your hand too close to the fire you naturally take it away.
+- If you buy something you didn't like you don't (generally) buy it again.
 
 So, then, if we act so naturally about so many of these things, why not apply them to cases such as the following:
 
--   If we are in a job we don't like, why don't we leave it?
--   If we are in a position we can't handle, why don't we say it?
--   If we are under a lot of stress, why don't we deal with it?
+- If we are in a job we don't like, why don't we leave it?
+- If we are in a position we can't handle, why don't we say it?
+- If we are under a lot of stress, why don't we deal with it?
 
 It's ALL about communication and action. It's not about not being able to handle something, it's about not communicating it to the right person. It's not about not being comfortable in a job, it's about doing something about it. Don't be afraid to live right.

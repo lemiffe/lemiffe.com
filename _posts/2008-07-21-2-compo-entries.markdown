@@ -17,8 +17,8 @@ tags:
 
 Here are my entries for 2 composition contest's that were held yesterday on the Mod_Shrine, unfortunately I got last place in both, but in the end... it's music, and it's shareable :) You need a tracker that supports .IT files to play it, or modplug player. [Download MPP here](http://www.modplug.com/playerinfo.html).
 
-[The Genuine Sound of Vomit](http://lemiffe.com/wp-content/uploads/2008/07/levomit.it)
+[The Genuine Sound of Vomit]({{ site.url }}/assets/media/levomit.it)
 
-[The spasm](http://lemiffe.com/wp-content/uploads/2008/07/spasm.it)
+[The spasm]({{ site.url }}/assets/media/spasm.it)
 
 (Right click and save these files to your PC to listen, it won't stream off the internet).
