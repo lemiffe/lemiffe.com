@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Building a web application for $5-10 per month &middot; Lemiffe
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/building-a-web-application-for-5-10-per-month">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Welcome to lemiffe.com, powered by Jekyll and Lanyon, you'll find my legacy blog here as well as links to my main online locations!</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/"
+      >Home</a
+    >
+
+               
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/about"
+      >About</a
+    >
+                                                            
+
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/blog/"
+      >Legacy Blog</a
+    >
+  </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2023. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Lemiffe</a>
+            <small>Music, Software, Stories & AI</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Building a web application for $5-10 per month</h1>
+  <span class="post-date">15 Oct 2014</span>
+  <p>SAAS companies seem to fulfil almost every need lately; from VCS to mailing, from authentication to screen sharing, from image and video processing to caching and app hosting. Interestingly enough, a lot of these companies offer basic tiers for free, so it is becoming increasingly possible to launch a web application where most of the work is done by 3rd parties, with a minimal budget.</p>
+
+<p>I started wondering recently if it would be possible to launch such an app, using as many 3rd party services as possible to fulfil the necessary functions (such as authentication and storage), with a budget of $5 to $10 USD per month.</p>
+
+<p>The following is a graph representing my idea for the architecture of such an app, describing the interaction with these services. Most of these are free (except for the purchase of a domain name, Google Apps, and DigitalOcean, which have very accessible plans):</p>
+
+<p><img src="/assets/media/SaasMapWebApp.png" alt="image" /></p>
+
+<p><strong>The goal of my small research was to verify if it would be possible to:</strong></p>
+
+<p>Build an SSL-enabled web application with monitoring + CDN + hosting + authentication using OpenID, striving for minimal cost while offloading as much back-end, data, and functionality to cheap or free 3rd party services.</p>
+
+<p><strong>Every 3rd party service mentioned in this graph had to fulfil the following criteria: </strong></p>
+
+<ul>
+  <li>Free (or very cheap)</li>
+  <li>Longevity (has been thoroughly adopted by the market, or major companies)</li>
+  <li>Reliable (at least 99% SLA)</li>
+</ul>
+
+<p><strong>This is a list of tools &amp; services to get your new product up and running for dirt cheap:</strong></p>
+
+<ul>
+  <li>
+    <p><strong>Domain, DNS, hosting, and caching</strong></p>
+
+    <ul>
+      <li>
+        <p><a href="https://www.godaddy.com/"><strong>GoDaddy</strong></a> offers cheap domain names and DNS hosting</p>
+      </li>
+      <li>
+        <p><a href="https://www.cloudflare.com/"><strong>Cloudflare</strong></a> offers excellent caching + security + free SSL</p>
+      </li>
+      <li>
+        <p><a href="https://www.digitalocean.com/"><strong>DigitalOcean</strong></a> <a href="https://github.com/fog/fog/issues/2525">has it’s flaws</a>, but is still a much cheaper option than Rackspace or Amazon</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Authentication</strong></p>
+
+    <ul>
+      <li><a href="http://openid.net/"><strong>OpenID</strong></a> Connect is an initiative by several large companies to make auth simpler (like <a href="https://www.mozilla.org/en-US/persona/">Persona</a> by Mozilla)</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Databases &amp; Storage</strong></p>
+
+    <ul>
+      <li>
+        <p><strong>Self-hosted</strong></p>
+
+        <ul>
+          <li>
+            <p><a href="http://www.mongodb.org/"><strong>MongoDB</strong></a> is a great/easy NoSQL solution</p>
+          </li>
+          <li>
+            <p><strong><a href="http://www.postgresql.org/">PostgreSQL</a></strong> is widely used and supports SQL/NoSQL</p>
+          </li>
+          <li>
+            <p><strong><a href="http://www.mysql.com/">MySQL</a> </strong>and<a href="https://mariadb.org/">** MariaDB**</a> are standard SQL RDBMS that have gone through the test of time</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Remote</strong></p>
+
+        <ul>
+          <li>
+            <p><a href="https://cloud.google.com/datastore/docs"><strong>Google Cloud DataStore</strong></a> is your database in the cloud (and it has a free plan as well)</p>
+          </li>
+          <li>
+            <p><a href="http://aws.amazon.com/s3/"><strong>Amazon S3</strong></a> (for storage, in case you have a large amount of images/files, optional in this case)</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Mail</strong></p>
+
+    <ul>
+      <li>
+        <p><strong>Mailbox hosting</strong></p>
+
+        <ul>
+          <li>
+            <p><a href="https://pawnmail.com/"><strong>Pawnmail</strong></a> - Email hosting for free! (tried it for a year and so far it seems to work great)</p>
+          </li>
+          <li>
+            <p><a href="https://www.google.com/work/apps/business/"><strong>Google Apps</strong></a> - Mailbox functionality for your domain ($5/mailbox) in case you don’t want to set up a server</p>
+          </li>
+          <li>
+            <p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-postfix-e-mail-server-with-dovecot"><strong>Postfix mail server</strong></a> - You can host it yourself (using Postfix), but be prepared to spend a lot of time setting it up</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Mass-mailing systems</strong></p>
+
+        <ul>
+          <li>
+            <p><a href="https://www.mailjet.com/"><strong>Mailjet</strong></a> is great for sending emails (from your server) and newsletters (<a href="https://www.mailjet.com/pricing">and has a free plan</a>)</p>
+          </li>
+          <li>
+            <p><a href="http://mailchimp.com/"><strong>Mailchimp</strong></a> is another option, and also has a <a href="http://mailchimp.com/pricing/">free plan</a></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Graphics and icons</strong></p>
+
+    <ul>
+      <li>
+        <p><a href="https://unsplash.com"><strong>Unsplash</strong></a> (and Flickr freeuse) offer good images for use in your site for free</p>
+      </li>
+      <li>
+        <p><a href="http://fortawesome.github.io/Font-Awesome/"><strong>Font Awesome</strong></a> provides a quality icon font for free</p>
+      </li>
+      <li>
+        <p><a href="http://iconifier.net/"><strong>Iconifier.net</strong></a> (create your favicon and apple icons for free)</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Monitoring, logging and analytics</strong></p>
+
+    <ul>
+      <li>
+        <p><a href="http://www.google.com/analytics/"><strong>Google Analytics</strong></a> offers free tracking for website users and their actions on your site/application</p>
+      </li>
+      <li>
+        <p><del><a href="https://www.pingdom.com/"><strong>Pingdom</strong></a> be alerted when your site goes down <a href="https://www.pingdom.com/free/">with a free account</a></del></p>
+
+        <ul>
+          <li>Pingdom no longer has a free account, but <strong><a href="https://www.statuscake.com">statuscake</a></strong> does!</li>
+        </ul>
+      </li>
+      <li>
+        <p><a href="http://newrelic.com/"><strong>NewRelic</strong></a> offers application/server monitoring <a href="http://newrelic.com/application-monitoring/pricing">with a free plan</a></p>
+      </li>
+      <li>
+        <p><a href="https://airbrake.io/"><strong>AirBrake</strong></a> helps with error logging / notifications, it costs $35/mo so I’d say this is optional in early stages</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Finally, the application itself could be built in this way:</strong></p>
+
+<ul>
+  <li><strong>Back-end</strong>: Python + Flask + Tornado. Flask is a framework which allows you to generate APIs in a simple/scalable way, and it is very easy to get started. Add Tornado to handle concurrent requests. You could use the PyOIDC wrapper to handle authentication, and the rest could rely on a simple architecture (Entity - DAL - BLL - API).</li>
+  <li><strong>Front-end</strong>: Built with HTML5 + Bootstrap (easy way to get up and running fast), AngularJS (with controllers and services to communicate with the back-end), SASS (or LESS), and Gulp to compile/merge everything.</li>
+  <li><strong>Source &amp; deployments</strong>: You could use Bitbucket with two private repositories (front-end / back-end) for free, and Capistrano to deploy to your server.</li>
+  <li><strong>Testing</strong>: Protractor and/or Jasmine</li>
+</ul>
+
+<p><strong>As easy as that!</strong></p>
+
+<p>If you have any suggestions to how I could improve this chart, or any services that would improve (or further delegate core functionality to free/cheap 3rd party solutions), please let me know in the comments!</p>
+
+<p><strong>* Note</strong>: You could use Heroku (which has a free tier) instead of DigitalOcean or Rackspace, but who doesn’t love full control over his/her server?</p>
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/moved-blog-to-github-pages">
+            I moved
+            <small>08 Sep 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/antimony">
+            Antimony
+            <small>15 Nov 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/computer-overlords">
+            Computer Overlords
+            <small>15 Nov 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

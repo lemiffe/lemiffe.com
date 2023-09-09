@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      How to deploy a static page to Heroku, the easy way! &middot; Lemiffe
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/how-to-deploy-a-static-page-to-heroku-the-easy-way">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Welcome to lemiffe.com, powered by Jekyll and Lanyon, you'll find my legacy blog here as well as links to my main online locations!</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/"
+      >Home</a
+    >
+
+               
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/about"
+      >About</a
+    >
+                                                            
+
+    <a
+      class="sidebar-nav-item"
+      href="http://localhost:4000/blog/"
+      >Legacy Blog</a
+    >
+  </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 2023. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Lemiffe</a>
+            <small>Music, Software, Stories & AI</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">How to deploy a static page to Heroku, the easy way!</h1>
+  <span class="post-date">18 Oct 2012</span>
+  <p>I wanted to upload a simple website based on HTML, CSS and JS files, with a few images, and a favicon. So I registered at Heroku, bought a domain name, followed the Heroku instructions on how to set up the “Toolbelt” and GIT.</p>
+
+<p>So I thought I was all set up: I created a folder with an index.html page, with the text “Coming Soon…”. I set up the repository, and tried to commit to Heroku, only to receive a message similar to “This is not a code repository” or something similar. Heroku is primarily aimed at apps running on frameworks, like Ruby on Rails, Django (Python), node.js, or… ahem… PHP.</p>
+
+<p>So it seemed incredibly dumb that it can handle all these frameworks, but it doesn’t let me upload a static site! So I searched about, and found out how to do this by setting a demo (barebones) <a href="https://devcenter.heroku.com/articles/static-sites-on-heroku">ruby app</a>, as well as a <a href="http://codingfrontier.com/running-a-static-site-for-free-on-heroku">Sinatra variation</a>. However, this didn’t convince me. First of all I didn’t want to place my code in a “public” folder. No. I was probably being a bit picky, but when I expect things to work a certain way, I get annoyed when barriers are put up in my way.</p>
+
+<p>I finally figured out that Heroku allows you to publish PHP sites as well, with NO configuration needed! That’s right, just create your .php files, and it will figure out that the Heroku app should run PHP for this site, and it will auto-configure the app to run on the latest version of PHP/Apache.</p>
+
+<h2 id="so-here-is-how-you-do-it">So here is how you do it:</h2>
+
+<p>Rename your index.html to home.html or something similar.</p>
+
+<p>Create an index.php file with the following code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php include_once("home.html"); ?&gt;
+</code></pre></div></div>
+
+<p>That’s it!</p>
+
+<p>Now go to your app folder in CMD (or Bash), and commit your code to Heroku using the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m 'Change this to a meaningful description'
+git push heroku master
+</code></pre></div></div>
+
+<p>And finally, you should get the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----&gt; Heroku receiving push&lt;br id=".reactRoot[192].[1][2][1]{comment10152195294515593_36201897}..[1]..[1]..[0].[0][2]..[0].[1]"&gt;&lt;/br&gt;-----&gt; PHP app detected&lt;br id=".reactRoot[192].[1][2][1]{comment10152195294515593_36201897}..[1]..[1]..[0].[0][2]..[0].[3]"&gt;&lt;/br&gt;-----&gt; Bundling Apache version 2.2.22&lt;br id=".reactRoot[192].[1][2][1]{comment10152195294515593_36201897}..[1]..[1]..[0].[0][2]..[0].[5]"&gt;&lt;/br&gt;-----&gt; Bundling PHP version 5.3.10&lt;br id=".reactRoot[192].[1][2][1]{comment10152195294515593_36201897}..[1]..[1]..[0].[0][2]..[0].[7]"&gt;&lt;/br&gt;-----&gt; Discovering process types&lt;br id=".reactRoot[192].[1][2][1]{comment10152195294515593_36201897}..[1]..[1]..[0].[0][2]..[3]..[0]"&gt;&lt;/br&gt;Default types for PHP -&gt; web
+-----&gt; Compiled slug size: 9.5MB&lt;br id=".reactRoot[192].[1][2][1]{comment10152195294515593_36201897}..[1]..[1]..[0].[0][2]..[3]..[12]"&gt;&lt;/br&gt;-----&gt; Launching... done, v4
+</code></pre></div></div>
+
+<p><strong>Congratulations!</strong> You have published a static site to Heroku with one line of PHP code :)</p>
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/moved-blog-to-github-pages">
+            I moved
+            <small>08 Sep 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/antimony">
+            Antimony
+            <small>15 Nov 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/computer-overlords">
+            Computer Overlords
+            <small>15 Nov 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>
