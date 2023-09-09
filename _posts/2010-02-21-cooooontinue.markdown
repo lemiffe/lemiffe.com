@@ -30,7 +30,7 @@ tags:
 
 ### Are you consistent with what you do? Do you finish everything you start? No, I didn't think so, but if you do... Congratulations! You may skip this post.
 
-![]({{ site.baseurl }}/assets/media/Screenshot1.png)Otherwise, I have a story to tell you...
+![]({{ site.url }}/assets/media/Screenshot1.png)Otherwise, I have a story to tell you...
 
 Once upon a time I was just like you. I had many ideas, some of them quite good, and I tried to carry them out only to realise I couldn't finish all of them. Sometimes I would get bored halfway through and leave the project incomplete. When it was something socially-related and I did not achieve an immediate response, I would leave it incomplete and/or get frustrated with it. Sometimes I simply couldn't be _arsed_ to continue with it.
 

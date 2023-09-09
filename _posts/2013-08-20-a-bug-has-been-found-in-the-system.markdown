@@ -32,7 +32,7 @@ tags:
     - versions
 ---
 
-![image]({{ site.baseurl }}/assets/media/7866585876_0ddc01421d_z-500x332.jpg). Just last week Glenn Greenwald was detained for 9 hours at Heathrow airport as being a "terrorism suspect". What on earth is happening?
+![image]({{ site.url }}/assets/media/7866585876_0ddc01421d_z-500x332.jpg). Just last week Glenn Greenwald was detained for 9 hours at Heathrow airport as being a "terrorism suspect". What on earth is happening?
 
 **A bug has been found**, or more like hundreds of bugs, and they have been unfixed, even though the issues have been raised.
 
