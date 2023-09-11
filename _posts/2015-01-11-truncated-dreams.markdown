@@ -39,9 +39,9 @@ My hope is that it will give you a perspective of one of the ways things can go 
 
 It's a long read, but I hope you enjoy it!
 
----
+![Truncated Dreams Header]({{ site.url }}/assets/media/tr-drms.jpg)
 
-####  Preface
+### Preface
 
 I am a 30-something year old software developer, an AI enthusiast, and a musician in my spare time. I have been programming since I was 10 years old. I started because I dreamt of making games, but sooner rather than later I ended up writing corporate software (admin and invoicing systems, ERPs, CRMs, etc.) and designing/developing websites as this was far more profitable, and easier to get into. From age 12 onward, whenever someone asked me what I wanted to do when I was older, I would always say "I'm going to be a programmer". And a programmer is what I became.
 
