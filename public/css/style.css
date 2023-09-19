@@ -92,6 +92,14 @@ a.button.green:hover, a.button.green:focus {
     text-decoration: none;
 }
 
+.sidebar-toggle:active, #sidebar-checkbox:focus ~ .sidebar-toggle, #sidebar-checkbox:checked ~ .sidebar-toggle {
+    background-color: #fff;
+}
+
+.sidebar-toggle:active:before, #sidebar-checkbox:focus ~ .sidebar-toggle::before, #sidebar-checkbox:checked ~ .sidebar-toggle::before {
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23555' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat !important;
+}
+
 /* Home page */
 
 html.nocontainer, html.nocontainer body {
@@ -114,6 +122,10 @@ html.nocontainer, html.nocontainer body {
 }
 
 .panel-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: 620px;
     margin: 0 auto;
 }
@@ -129,13 +141,32 @@ html.nocontainer, html.nocontainer body {
     border-top: 1px solid rgba(255,255,255,0.14)
 }
 
+.stagger-visualizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: 17rem;
+}
+
+.stagger-visualizer div {
+    /*position: absolute;*/
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
 .navigation {
     display: inline-block;
     float: left;
     top: 0px;
     position: relative;
     margin: 0;
-    list-style-type: none
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
 }
 
 .navigation__item {
@@ -156,14 +187,6 @@ html.nocontainer, html.nocontainer body {
     color: #FFF;
     border-color: #FFF;
     opacity: 1
-}
-
-.cover-navigation--primary {
-    margin-left: 40px;
-}
-
-.navigation--social {
-    margin-left: 1.5em
 }
 
 .navigation--social a {
@@ -203,6 +226,18 @@ html.nocontainer, html.nocontainer body {
     color: #000;
     border-color: #000;
     text-decoration: none;
+}
+
+.nocontainer body {
+    background-color: #fc6a5b;
+}
+
+.nocontainer body .masthead {
+    border-bottom: none;
+}
+
+.nocontainer .masthead .container {
+    display: none;
 }
 
 /* Foundation Icons */
