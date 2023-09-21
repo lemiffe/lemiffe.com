@@ -92,6 +92,11 @@ a.button.green:hover, a.button.green:focus {
     text-decoration: none;
 }
 
+.sidebar-toggle {
+    border-radius: 0;
+    padding: .25rem .5rem;
+}
+
 .sidebar-toggle:active, #sidebar-checkbox:focus ~ .sidebar-toggle, #sidebar-checkbox:checked ~ .sidebar-toggle {
     background-color: #fff;
 }
