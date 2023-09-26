@@ -17,4 +17,4 @@ He narrates everyday situations in such a powerful, excruciating way... taking t
 
 I can't remember if I heard that in the book or if I watched a video where that was mentioned, but I found the quote relatable to this book.
 
-My overall impression was that its a good short book with some very funny moments - 7/10.
+My overall impression was that its a good short book with some very funny moments - 7/10
