@@ -1,6 +1,6 @@
 ---
 title: The Discomfort of Evening (by Marieke Lucas Rijneveld)
-date: 2024-01-31
+date: 2024-01-12
 ---
 
 As the weeks pass by after finishing this book, I realise more and more how perturbing the experience was. It's like a lingering nightmare from nights gone by which looms every night, threatening to return while you sleep, to terrorise your dreams with a complex distorted reality of cold, coats, toads, rabbits, cows and "the other side".
