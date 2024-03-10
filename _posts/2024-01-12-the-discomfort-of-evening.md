@@ -15,4 +15,4 @@ I have mixed feelings after reading this book. Marieke crafted a world so unique
 
 At times I'd be reading on the train, bus, or plane, hiding the pages from people, afraid they'd catch a glimpse of the perturbing sentences, page after page. It was a diarrhea of all possible intrusive thoughts, everything weird you might have thought of doing, to yourself, or to others, growing up and exploring the world, wondering "why not?". All of those crazy disgusting weird thoughts, turned into a reality.
 
-I don't know whether I'd recommend this book. I'm still perturbed by it, so I guess it did it's job. 7/10
+I don't know whether I'd recommend this book. I'm still perturbed by it, so I guess it did its job. 7/10
