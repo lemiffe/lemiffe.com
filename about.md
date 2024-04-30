@@ -3,20 +3,27 @@ layout: page
 title: About
 ---
 
-Born in the UK but raised in Mexico, I grew up listening to old and new rock, metal, and nu metal, such as Linkin Park, Limp Bizkit, Deftones, Radiohead, SOAD, Weezer, Puddle of Mudd, Korn, Blink 182, The Offspring, Foo Fighters, etc. The MTV era. It was incredible sitting down with friends, jamming along to powerful anthems that defined those years.
+Lemiffe is a songwriter and producer from the UK and Mexico, who currently lives in Belgium as of 2014.
 
-I started composing music straight after getting a guitar for my 16th birthday; followed by music school for about a year, but I realised it wasn’t a direction I wanted to pursue, preferring practice to theory, and picking up a bit of theory (as needed) over the years.
+Having written over 15 albums and EPs, his goal is to produce a large body of work combining multiple genres and themes, such as sociology, psychology, technology, AI, addiction and death.
 
-After a brief stint in Scotland to study an MSc, followed by running a startup for a few years in Mexico, I moved to Belgium where I've (mostly) been since then.
+Lemiffe started composing music in September, 2001, just after acquiring his first guitar. The following year he founded the band Distortion in the Mid Range alongside his sister and two friends, with whom he performed for the following five years.
 
-I primarily compose electronic rock, but a lot of my work takes inspiration from Indie, Folk, Alternative and Metal (in both English and Spanish). I write about themes such as humanity, the mind, the future, AI, politics, death, anxiety, code, technology, addiction, and the collapse of society.
+Their music was heavily influenced by music from the early 2000s such as Linkin Park, Deftones, Audioslave, Blink 182, Limp Bizkit, System of a Down, amongst others.
 
-When I'm not writing music I'm writing stories, code, and making videos.
+After they separated due to most of the band members moving to different countries, Lemiffe carried on writing music as a solo artist while moving to different countries such as Scotland, Mexico, Ireland and Belgium.
 
-**You can find my work on the following sites:**
+While most of his music is guitar-centric, he’ll often compose songs based on the bass, drums or ukulele, to find different grooves or harmonies that will define the texture and progression of the song.
+
+Some of the topics his music explores include time, the effects of AI on humanity, freedom and its effect on the mind, existentialism, chaos and order, separation and loss, mental health, exploring new lands, geography, parallels between computer science and life, space travel, and stories about humans in odd situations.
+
+When he's not writing music he's writing stories, code, and making videos.
+
+**You can find Lemiffe's work on the following sites:**
 
 * [Instagram](https://instagram.com/lemiffe) - B&W Photography
-* [YouTube](https://youtube.com/lemiffe) - Music channel
+* [Threads](https://threads.net/@lemiffe) - Music-specific discussions
+* [YouTube](https://youtube.com/lemiffe) - Music channel (main)
 * [YouTube](https://www.youtube.com/@lemonific) - Gaming channel
 * [YouTube](https://www.youtube.com/@bellmanrunning) - Running channel
 * [X](https://x.com/lemiffe) - _AKA_ Twitter
@@ -27,7 +34,7 @@ When I'm not writing music I'm writing stories, code, and making videos.
 
 ## Newsletter
 
-If you'd like to receive updates on my latest music, sign up here (no spam!)
+If you'd like to receive updates on Lemiffe's latest music, sign up here (no spam!)
 
 <div id="mc_embed_signup">
     <form id="mc-embedded-subscribe-form" class="validate" action="https://lemiffe.us19.list-manage.com/subscribe/post?u=b812582d2b5e10dce2bb3a9a0&amp;id=f9365b3e1e" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
