@@ -2,6 +2,7 @@ _site/
 _site/*
 Gemfile
 Gemfile.lock
+.bundle/
 
 # Compiled source #
 ###################

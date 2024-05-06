@@ -6,7 +6,9 @@ title: Home
 <div class="home-outer-container">
     <div class="home-container">
         <div class="panel-main">
-            <div class="stagger-visualizer"></div>
+            <!--
+                <div class="stagger-visualizer"></div>
+            -->
             <!--
                 <p class="panel-description">{{ site.title }}</p>
                 <hr class="panel-divider" />
@@ -20,14 +22,6 @@ title: Home
                             <a href="{{ site.url }}/blog" title="Blog" class="blog-button">
                                 <i class="icon icon-book"></i>
                                 <span class="label">Blog</span>
-                            </a>
-                        </li>
-
-                        <!-- Twitter -->
-                        <li class="navigation__item">
-                            <a href="https://x.com/lemiffe" title="@lemiffe on X" target="_blank">
-                                <i class="icon icon-social-twitter"></i>
-                                <span class="label">X</span>
                             </a>
                         </li>
 
@@ -51,6 +45,14 @@ title: Home
                             </a>
                         </li>
 
+                        <!-- Bandcamp -->
+                        <li class="navigation__item">
+                            <a href="{{ site.url }}/atom.xml" title="Bandcamp" target="_blank">
+                                <i class="icon icon-music"></i>
+                                <span class="label">Bandcamp</span>
+                            </a>
+                        </li>
+
                         <!-- Instagram -->
                         <li class="navigation__item">
                             <a href="https://instagram.com/lemiffe" title="Lemiffe on Instagram" target="_blank">
@@ -59,19 +61,27 @@ title: Home
                             </a>
                         </li>
 
+                        <!-- Threads -->
+                        <li class="navigation__item">
+                            <a href="https://threads.net/@lemiffe" title="@lemiffe on Threads" target="_blank">
+                                <i class="icon icon-comments"></i>
+                                <span class="label">Threads</span>
+                            </a>
+                        </li>
+
+                        <!-- Twitter -->
+                        <li class="navigation__item">
+                            <a href="https://x.com/lemiffe" title="@lemiffe on X" target="_blank">
+                                <i class="icon icon-social-twitter"></i>
+                                <span class="label">X / Twitter</span>
+                            </a>
+                        </li>
+
                         <!-- GitHub -->
                         <li class="navigation__item">
                             <a href="https://www.github.com/lemiffe" title="Lemiffe on GitHub" target="_blank">
                                 <i class="icon icon-social-github"></i>
                                 <span class="label">GitHub</span>
-                            </a>
-                        </li>
-
-                        <!-- RSS -->
-                        <li class="navigation__item">
-                            <a href="{{ site.url }}/atom.xml" title="Subscribe" target="_blank">
-                                <i class="icon icon-rss"></i>
-                                <span class="label">RSS</span>
                             </a>
                         </li>
                     </ul>
@@ -89,6 +99,7 @@ title: Home
 ></script>
 
 <script>
+    /*
     const staggerVisualizerEl = document.querySelector('.stagger-visualizer');
     const fragment = document.createDocumentFragment();
     const grid = [17, 17];
@@ -151,4 +162,5 @@ title: Home
         });
 
     staggersAnimation.play();
+    */
 </script>

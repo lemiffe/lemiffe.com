@@ -175,21 +175,27 @@ html.nocontainer, html.nocontainer body {
     margin: 0;
     list-style-type: none;
     padding: 0;
-    margin-top: 80px;
+    margin-top: -20px;
 }
 
 .navigation__item {
-    display: inline-block;
-    margin: 0 2px 0 0;
-    line-height: 1em
+    display: block;
+    margin: 15px 0 0 0;
+    line-height: 1em;
+    min-width: 280px;
+
 }
 
 .navigation--social a .label {
-    display: none;
+    display: inline-block;
+    top: -3px;
+    left: 10px;
+    position: relative;
+    font-size: 1.2em;
 }
 
 .navigation--social a .icon {
-    display: block;
+    display: inline-block;
     font-size: 1.7em
 }
 
@@ -206,6 +212,8 @@ html.nocontainer, html.nocontainer body {
     min-height: 30px;
     -webkit-font-smoothing: antialiased;
     transition: all 0.3s;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .navigation__item a:hover {
@@ -233,7 +241,7 @@ html.nocontainer, html.nocontainer body {
     src: url("../../assets/media/foundation-icons.eot");
     src: url("../../assets/media/foundation-icons.eot?") format("embedded-opentype"),url("../../assets/media/foundation-icons.woff") format("woff"),url("../../assets/media/foundation-icons.ttf") format("truetype"),url("../../assets/media/foundation-icons.svg") format("svg");
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
 }
 
 .icon:before {
@@ -245,7 +253,8 @@ html.nocontainer, html.nocontainer body {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
-    text-decoration: inherit
+    text-decoration: inherit;
+    color: #b73f33;
 }
 
 .icon-address-book:before {

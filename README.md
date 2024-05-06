@@ -6,4 +6,5 @@ This is the Jekyll-based repository for lemiffe.com's page + blog archive; after
 
 - `gem install bundler` (needs Ruby)
 - `bundle install` (might need sudo)
+  - If it fails try `sudo /usr/bin/ruby /usr/local/bin/bundle install --without production`
 - `bundle exec jekyll serve --watch`
