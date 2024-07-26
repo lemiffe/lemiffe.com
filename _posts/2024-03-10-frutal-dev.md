@@ -11,7 +11,7 @@ And suddenly the small project has turned out to be an expedition lasting close 
 
 And then you remember: **There are no expectations.**
 
-And thus I've been working on FRUTAL for a while; an album I started working with my friend Doorbell before I set off to Ireland. We decided to hang out for a series of 4-5 sessions to work on some material, where he'd play drums and I'd compose, play guitar and sing. The result was 4 songs related to fruits in one way or another, some based on real stories, and some fantasy. The intention was to craft them with a heavy grungy sound, hence the name of the album would be a wordplay on "Brutal".
+And thus I've been working on FRUTAL for a while; an album I started working with my friend Pyrathee before I set off to Ireland. We decided to hang out for a series of 4-5 sessions to work on some material, where he'd play drums and I'd compose, play guitar and sing. The result was 4 songs related to fruits in one way or another, some based on real stories, and some fantasy. The intention was to craft them with a heavy grungy sound, hence the name of the album would be a wordplay on "Brutal".
 
 Yet 4 songs weren't enough, so I paid a few voice actors and narrators on Fiverr to read out fruit names and definitions, and then these had to be woven into little musical worlds or motifs. But now we had 6 bridges and 4 songs, not enough songs for an album, but wait, this wasn't supposed to be an album! Yet there I was, writing more songs, now in a different style, and then I had to construct more bridges, toppling some of the older ones down in the process, and more songs were crafted, about plums, about apples, about mangoes.
 
