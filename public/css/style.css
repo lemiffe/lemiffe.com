@@ -131,6 +131,12 @@ html.nocontainer, html.nocontainer body {
     position: relative;
 }
 
+.home-container img.logo {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
 .panel-main {
     display: flex;
     flex-wrap: wrap;
@@ -231,10 +237,12 @@ html.nocontainer, html.nocontainer body {
 
 .nocontainer body {
     background-color: #fc6a5b;
+    background: url("../../assets/media/pink-noise.jpg");
 }
 
 .nocontainer body .masthead {
     border-bottom: none;
+    background: none;
 }
 
 .nocontainer .masthead .container {
