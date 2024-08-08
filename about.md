@@ -29,7 +29,9 @@ When he's not writing music he's writing stories, code, and making videos.
 * [X](https://x.com/lemiffe) - _AKA_ Twitter
 * [Spotify](https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw)
 * [Apple Music](https://music.apple.com/us/artist/lemiffe/457600639)
-* [Bandcamp](https://lemiffe.bandcamp.com/)
+* [Soundcloud](https://soundcloud.com/lemiffe)
+* [Bandcamp](https://lemiffe.bandcamp.com/) - Support my music by buying it in high quality
+* [Gumroad](https://lemiffe.gumroad.com/) - Buy my music directly
 * [Medium](https://medium.com/@lemiffe) - Blog for coding and other non-music matters
 * [Github](https://github.com/lemiffe) - Public code repositories
 
