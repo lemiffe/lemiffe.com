@@ -36,7 +36,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #c54b3d;
+    background-color: #C63233;
 }
 
 a {
@@ -74,7 +74,7 @@ a.button.green:hover, a.button.green:focus {
 
 .masthead {
     border-bottom: 1px solid #fff;
-    background: #fc6a5b;
+    background: #C63233;
     position: relative;
 }
 
@@ -95,6 +95,7 @@ a.button.green:hover, a.button.green:focus {
 .sidebar-toggle {
     border-radius: 0;
     padding: .25rem .5rem;
+    z-index: 10;
 }
 
 .sidebar-toggle:active, #sidebar-checkbox:focus ~ .sidebar-toggle, #sidebar-checkbox:checked ~ .sidebar-toggle {
@@ -194,16 +195,27 @@ html.nocontainer, html.nocontainer body {
 }
 
 .navigation--social a .label {
-    display: inline-block;
-    top: -3px;
-    left: 10px;
+    display: block;
+    left: 20px;
     position: relative;
     font-size: 1.2em;
+    top: 0;
+    text-align: center;
 }
 
 .navigation--social a .icon {
-    display: inline-block;
-    font-size: 1.7em
+    font-size: 1.7em;
+    display: block;
+    font-size: 1.7em;
+    background-color: #312770;
+    top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    text-align: center;
+    padding-top: 10px;
+    color: #ffffff;
 }
 
 .navigation__item a {
@@ -214,29 +226,34 @@ html.nocontainer, html.nocontainer body {
     font-weight: bold;
     letter-spacing: 1px;
     text-shadow: none;
-    color: #000;
-    background: #ffffff;
+    color: #fff;
+    border: solid 2px white;
     min-height: 30px;
     -webkit-font-smoothing: antialiased;
     transition: all 0.3s;
     text-transform: uppercase;
     font-family: sans-serif;
+    background: #971b1c61;
+}
+
+.navigation__item:nth-child(1) a {
+    background-color: #51082a6e;
 }
 
 .navigation__item a:hover {
-    color: #fff;
     text-decoration: none;
-    background-color: #000;
+    background-color: #ffffff;
+    color: #000;
 
     animation: headShake;
     animation-duration: 2s;
 }
 
 .navigation__item a:hover > .icon:before {
-    color: #fff;
+    color: #c6eb59;
 }
 
-.navigation__item_outline:nth-child(1) {
+.navigation__item:nth-child(1) {
     margin-top: 15px;
 }
 
@@ -324,7 +341,7 @@ html.nocontainer, html.nocontainer body {
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     text-decoration: inherit;
-    color: #fc6a5b;
+    color: #ffffff;
     transition: all 0.3s;
 }
 
