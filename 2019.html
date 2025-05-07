@@ -1,0 +1,130 @@
+---
+layout: default
+title: 2019
+---
+
+<style type="text/css">
+    .col-container {
+        display: grid;
+        grid-gap: 20px;
+        width: 100%;
+        justify-items: left;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        margin-bottom: 45px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        object-fit: scale-down;
+        height: fit-content;
+        line-height: 32px;
+    }
+
+    .title {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+    }
+
+    .subtitle {
+        background-color: #333333;
+        padding: 6px 15px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    h2 {
+        background-color: #333333;
+        padding: 7px 15px;
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .col .name {
+        margin-left: 20px;
+        display: block;
+    }
+
+    .col audio {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .col a{
+        margin-right: 15px;
+    }
+
+    .col-container .icon::before {
+        color: #222222;
+    }
+</style>
+
+<h3 class="title">2019</h3>
+<p class="subtitle">APRIL, 2025</p>
+<div class="masthead-description">
+    <p>
+        2019 is an EP based on sketches I recorded in 2019 in Belgium, which is arguably the best year of my life;
+        Having travelled to the US, Belgium, Denmark, Iceland and other places, running a marathon, amongst many other things,
+        it was a year full of crazy high notes and a few shocking moments. I tried to capture some of that vibe in these 4 tracks.
+    </p>
+    <div class="col-container">
+        <div class="col" style="text-align: center;">
+            <img src="{{ site.url }}/assets/media/2019-500.jpg" />
+            <a href="https://open.spotify.com/album/5Cw0udArWcEhE5X3egqxSJ"
+                ><i class="icon icon-social-spotify"></i> Spotify</a
+            >
+            <a href="https://music.apple.com/us/album/2019-ep/1812749128"
+                ><i class="icon icon-social-apple"></i> Apple
+                Music</a
+            >
+            <a href="https://lemiffe.gumroad.com/l/2019"
+                ><i class="icon icon-music"></i> Purchase</a
+            >
+            <a href="https://lemiffe.bandcamp.com/album/2019"
+                ><i class="icon icon-minus"></i> Bandcamp</a
+            >
+        </div>
+        <div class="col">
+            <h2>LISTEN (Low Quality)</h2>
+            <p>
+                <div class="name">Emstrur</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2019/1-emstrur.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">The Pink Slip</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2019/2-the-pink-slip.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Wind Like A Dagger</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2019/3-wind-like-a-dagger.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">I_hate_slugs</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2019/4-i_hate_slugs.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+        </div>
+    </div>
+</div>
