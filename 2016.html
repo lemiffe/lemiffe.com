@@ -1,0 +1,133 @@
+---
+layout: default
+title: 2016
+---
+
+<style type="text/css">
+    .col-container {
+        display: grid;
+        grid-gap: 20px;
+        width: 100%;
+        justify-items: left;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        margin-bottom: 45px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        object-fit: scale-down;
+        height: fit-content;
+        line-height: 32px;
+    }
+
+    .title {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+    }
+
+    .subtitle {
+        background-color: #333333;
+        padding: 6px 15px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    h2 {
+        background-color: #333333;
+        padding: 7px 15px;
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .col .name {
+        margin-left: 20px;
+        display: block;
+    }
+
+    .col audio {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .col a{
+        margin-right: 15px;
+    }
+
+    .col-container .icon::before {
+        color: #222222;
+    }
+</style>
+
+<h3 class="title">2016</h3>
+<p class="subtitle">MAY, 2025</p>
+<div class="masthead-description">
+    <p>
+        016 is an EP very loosely based on sketches I recorded in 2016 in Belgium. 
+        The drafts were too simple and I thought I could make something better, 
+        so I set myself a few challenges for this release: Everything acoustic, no VSTis (only effects), 
+        and no vocals. It was a challenge for sure but I love how Sunlight Jacket turned out 
+        (the first track) which gives me the same nostalgia that some of C418's tracks for Minecraft do.
+        The feeling of seeing the sun going down... The feeling that anything can happen now.
+    </p>
+    <div class="col-container">
+        <div class="col" style="text-align: center;">
+            <img src="{{ site.url }}/assets/media/2016-500.jpg" />
+            <a href="https://open.spotify.com/album/6iKD598qRh8MnNlSNpHtIE"
+                ><i class="icon icon-social-spotify"></i> Spotify</a
+            >
+            <a href="https://music.apple.com/us/album/2016-ep/1818066445"
+                ><i class="icon icon-social-apple"></i> Apple
+                Music</a
+            >
+            <a href="https://lemiffe.gumroad.com/l/2016"
+                ><i class="icon icon-music"></i> Purchase</a
+            >
+            <a href="https://lemiffe.bandcamp.com/album/2016"
+                ><i class="icon icon-minus"></i> Bandcamp</a
+            >
+        </div>
+        <div class="col">
+            <h2>LISTEN (Low Quality)</h2>
+            <p>
+                <div class="name">Sunlight Jacket</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2016/1-sunlight-jacket.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Reykjavik Marathon Cat</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2016/2-reykjavik-marathon-cat.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">PAVLVS</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2016/3-pavlvs.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Pintje Opdrinken En We Komen Af</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2016/4-pintje.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+        </div>
+    </div>
+</div>
