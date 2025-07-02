@@ -1,0 +1,135 @@
+---
+layout: default
+title: 2018
+---
+
+<style type="text/css">
+    .col-container {
+        display: grid;
+        grid-gap: 20px;
+        width: 100%;
+        justify-items: left;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        margin-bottom: 45px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        object-fit: scale-down;
+        height: fit-content;
+        line-height: 32px;
+    }
+
+    .title {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+    }
+
+    .subtitle {
+        background-color: #333333;
+        padding: 6px 15px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    h2 {
+        background-color: #333333;
+        padding: 7px 15px;
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .col .name {
+        margin-left: 20px;
+        display: block;
+    }
+
+    .col audio {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .col a{
+        margin-right: 15px;
+    }
+
+    .col-container .icon::before {
+        color: #222222;
+    }
+</style>
+
+<h3 class="title">2018</h3>
+<p class="subtitle">JUNE, 2025</p>
+<div class="masthead-description">
+    <p>
+        2018 is an EP inspired by sketches I recorded in Belgium during that year. This month's EP challenge 
+        was the opposite of the last one: Instead of purely acoustic recordings I went for fully-electronic. 
+        Only samples, loops, VSTis, built-in instruments, not a single second of anything recorded on my microphone.
+    </p>
+    <p>
+        It ended up being a bit synth-waveish with a touch of NIN; a bit eerie, dark and intense, but following 
+        the melodies and harmonies of the sketches I recorded back in 2018. A bit different from my normal work, 
+        but that's the challenge: Working within constraints.
+    </p>
+    <div class="col-container">
+        <div class="col" style="text-align: center;">
+            <img src="{{ site.url }}/assets/media/2018-500.jpg" />
+            <a href="https://open.spotify.com/album/2pWORMtfbxl0Slr2qOr6HE"
+                ><i class="icon icon-social-spotify"></i> Spotify</a
+            >
+            <a href="hhttps://music.apple.com/ca/album/2018-ep/1824065980"
+                ><i class="icon icon-social-apple"></i> Apple
+                Music</a
+            >
+            <a href="https://lemiffe.gumroad.com/l/2018"
+                ><i class="icon icon-music"></i> Purchase</a
+            >
+            <a href="https://lemiffe.bandcamp.com/album/2018"
+                ><i class="icon icon-minus"></i> Bandcamp</a
+            >
+        </div>
+        <div class="col">
+            <h2>LISTEN (Low Quality)</h2>
+            <p>
+                <div class="name">Beyond Rock Bottom</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2018/1-beyond-rock-bottom.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Ochtendgeluk</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2018/2-ochtendgeluk.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Regina Patientia</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2018/3-regina-patientia.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Hope Particle</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2018/4-hope-particle.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+        </div>
+    </div>
+</div>
