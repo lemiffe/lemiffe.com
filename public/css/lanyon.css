@@ -311,11 +311,16 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #0F1A73;
 }
 .page-title,
 .post-title {
   margin-top: 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: "Fredoka", sans-serif;
 }
 
 /* Meta data line below post title */

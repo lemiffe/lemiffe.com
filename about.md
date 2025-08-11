@@ -21,19 +21,19 @@ When he's not writing music he's writing stories, code, and making videos.
 
 **You can find Lemiffe's work on the following sites:**
 
-* [Instagram](https://instagram.com/lemiffe) - B&W Photography
-* [Threads](https://threads.net/@lemiffe) - Music-specific discussions
-* [YouTube](https://youtube.com/lemiffe) - Music channel (main)
-* [YouTube](https://www.youtube.com/@lemonific) - Gaming channel
-* [YouTube](https://www.youtube.com/@bellmanrunning) - Running channel
-* [X](https://x.com/lemiffe) - _AKA_ Twitter
-* [Spotify](https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw)
-* [Apple Music](https://music.apple.com/us/artist/lemiffe/457600639)
-* [Soundcloud](https://soundcloud.com/lemiffe)
-* [Bandcamp](https://lemiffe.bandcamp.com/) - Support my music by buying it in high quality
-* [Gumroad](https://lemiffe.gumroad.com/) - Buy my music directly
-* [Medium](https://medium.com/@lemiffe) - Blog for coding and other non-music matters
-* [Github](https://github.com/lemiffe) - Public code repositories
+-   [Instagram](https://instagram.com/lemiffe) - Music and Photography
+-   [Threads](https://threads.net/@lemiffe) - Music-specific discussions
+-   [YouTube](https://youtube.com/lemiffe) - Music channel (main)
+-   [YouTube](https://www.youtube.com/@lemonific) - Gaming channel
+-   [YouTube](https://www.youtube.com/@bellmanrunning) - Running channel
+-   [X](https://x.com/lemiffe) - _AKA_ Twitter
+-   [Spotify](https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw)
+-   [Apple Music](https://music.apple.com/us/artist/lemiffe/457600639)
+-   [Soundcloud](https://soundcloud.com/lemiffe)
+-   [Bandcamp](https://lemiffe.bandcamp.com/) - Support my music by buying it in high quality
+-   [Gumroad](https://lemiffe.gumroad.com/) - Buy my music directly
+-   [Medium](https://medium.com/@lemiffe) - Blog for coding and other non-music matters
+-   [Github](https://github.com/lemiffe) - Public code repositories
 
 ## Newsletter
 

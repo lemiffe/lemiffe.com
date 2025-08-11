@@ -19,7 +19,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="searc
 input[type=submit] {
     width: auto;
     height: 36px;
-    background-color: #fc6a5b;
+    background-color: #E63D5E;
     padding: 0 40px;
     display: inline-block;
     border: 0 none;
@@ -36,16 +36,16 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #C63233;
+    background-color: #CA2445;
 }
 
 a {
-    color: #fc6a5b;
+    color: #E63D5E;
 }
 
 a.button {
     width: auto;
-    background-color: #fc6a5b;
+    background-color: #E63D5E;
     padding: 4px 20px;
     display: inline-block;
     border: 0 none;
@@ -74,7 +74,7 @@ a.button.green:hover, a.button.green:focus {
 
 .masthead {
     border-bottom: 1px solid #fff;
-    background: #C63233;
+    background: #0F1A73;
     position: relative;
 }
 
@@ -137,6 +137,7 @@ html.nocontainer, html.nocontainer body {
     max-width: 280px;
     margin: 0 auto;
     margin-bottom: 25px;
+    border-radius: 0;
 }
 
 .panel-main {
@@ -207,7 +208,7 @@ html.nocontainer, html.nocontainer body {
     font-size: 1.7em;
     display: block;
     font-size: 1.7em;
-    background-color: #312770;
+    background-color: #101350;
     top: 0;
     position: absolute;
     left: 0;
@@ -222,26 +223,33 @@ html.nocontainer, html.nocontainer body {
     display: block;
     position: relative;
     padding: 12px 20px;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-shadow: none;
     color: #fff;
     border: solid 2px white;
     min-height: 30px;
-    -webkit-font-smoothing: antialiased;
     transition: all 0.3s;
+    background: #E63D5E;
+
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
     text-transform: uppercase;
-    font-family: sans-serif;
-    background: #971b1c61;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    text-shadow: 1px 1px 7px #2f2e2e80;
 }
 
 .navigation__item:nth-child(1) a {
-    background-color: #51082a6e;
+    background-color: #00DBFF;
 }
 
 .navigation__item a:hover {
     text-decoration: none;
+    text-shadow: 0 0;
     background-color: #ffffff;
     color: #000;
 
@@ -250,7 +258,7 @@ html.nocontainer, html.nocontainer body {
 }
 
 .navigation__item a:hover > .icon:before {
-    color: #c6eb59;
+    color: #eeeeee;
 }
 
 .navigation__item:nth-child(1) {
@@ -288,12 +296,13 @@ html.nocontainer, html.nocontainer body {
 }
 
 .nocontainer body {
-    background-color: #C63233;
+    background-color: #0c1461;
+    background: radial-gradient(#0c1461, #000000);
     overflow: hidden;
 }
 
 .nocontainer .sliding-background {
-    background: url("../../assets/media/pink-noise.jpg");
+    background: url("../../assets/media/blue-noise-light.jpg");
     height: 100%;
     width: 4788px;
     animation: slide 60s linear infinite;
@@ -301,6 +310,7 @@ html.nocontainer, html.nocontainer body {
     top: 0;
     bottom: 0;
     position: absolute;
+    opacity: 0.44;
   }
   
   @keyframes slide{

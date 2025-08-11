@@ -1,8 +1,8 @@
-title: Lemiffe
-tagline: Music, Software, Stories & AI
-description: 'Welcome to lemiffe.com, you can find links to most of my online presence in the About section!'
+title: LEMIFFE
+tagline: Music, Software & Stories
+description: "Welcome to lemiffe.com, you can find links to most of my online presence in the About section!"
 url: https://lemiffe.com
-baseurl: ''
+baseurl: ""
 paginate: 5
 paginate_path: /blog/page:num/
 permalink: /:title
