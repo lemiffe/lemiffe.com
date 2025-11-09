@@ -1,0 +1,178 @@
+---
+layout: default
+title: 2011
+---
+
+<style type="text/css">
+    .col-container {
+        display: grid;
+        grid-gap: 20px;
+        width: 100%;
+        justify-items: left;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        margin-bottom: 45px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        object-fit: scale-down;
+        height: fit-content;
+        line-height: 32px;
+    }
+
+    .title {
+        font-family: sans-serif;
+        font-weight: 600;
+        font-family: "Fredoka", sans-serif;
+        letter-spacing: 2px;
+        font-size: 34px;
+    }
+
+    .subtitle {
+        background-color: #1F1EB3;
+        padding: 6px 15px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-family: "Fredoka", sans-serif;
+    }
+
+    h2 {
+        background-color: #333333;
+        padding: 7px 15px;
+        color: #ffffff;
+        display: block;
+        font-weight: 600;
+        font-family: "Fredoka", sans-serif;
+        letter-spacing: 2px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .col .name {
+        margin-left: 20px;
+        display: block;
+    }
+
+    .col audio {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        margin-bottom: 25px;
+    }
+    
+    .social-links a {
+        margin-right: 8px;
+        background-color: #E63D5E;
+        color: #ffffff;
+        font-family: "Fredoka", sans-serif;
+        letter-spacing: 2px;
+        font-size: 17px;
+        padding: 3px 12px 5px 12px;
+        text-decoration: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        border-radius: 3px;
+        white-space: nowrap;
+    }
+
+    .social-links a:hover, .social-links a:focus {
+        background-color: #CA2445;
+    }
+
+    .social-links .icon {
+        margin-right: 5px;
+    }
+
+    .social-links .icon::before {
+        color: #ffffff;
+    }
+</style>
+
+<h3 class="title">2011</h3>
+<p class="subtitle">PUBLISHED: OCTOBER, 2025</p>
+<div class="masthead-description">
+    <p>
+        2011 is an EP inspired by sketches I recorded during that year in Mexico and Scotland.
+        The challenge for this month's EP was to compose all the tracks using a maximum of 4 channels in the DAW.
+    </p>
+    <p>
+        This often meant using the vocal channel (during spaces) to add an additional solo guitar or other instruments.
+        I did allow myself to use stereo channels to bounce down double-tracked guitars into a single channel (or vocals in some cases),
+        but that was the only rule I somewhat 'bent'.
+    </p>
+    <p class="social-links">
+        <a href="https://open.spotify.com/album/1kr6Y5oYKXwNDpczgW3XSc"
+            ><i class="icon icon-social-spotify"></i> SPOTIFY</a
+        >
+        <a href="https://music.apple.com/us/album/2011-ep/1845569939"
+            ><i class="icon icon-social-apple"></i> APPLE</a
+        >
+        <a href="https://lemiffe.bandcamp.com/album/2011"
+            ><i class="icon icon-minus"></i> BANDCAMP</a
+        >
+        <a href="https://lemiffe.gumroad.com/l/2011"
+            ><i class="icon icon-music"></i> PURCHASE</a
+        >
+    </p>
+    <div class="col-container">
+        <div class="col" style="text-align: center;">
+            <img src="{{ site.url }}/assets/2011/cover-500.jpg" />
+        </div>
+        <div class="col">
+            <h2>LISTEN (Low Quality)</h2>
+            <p>
+                <div class="name">The Fringe</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2011/1-the-fringe.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Dreaming Aloud</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2011/2-dreaming-aloud.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">The Answer</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2011/3-the-answer.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Edinburgh Fog</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2011/4-edinburgh-fog.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Grandvalira</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2011/5-grandvalira.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <div class="name">Valencia Sunset</div>
+                <audio controls>
+                    <source src="{{ site.url }}/assets/2011/6-valencia-sunset.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+        </div>
+    </div>
+</div>
