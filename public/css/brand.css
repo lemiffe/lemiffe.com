@@ -1,0 +1,50 @@
+/* ---- Self-hosted Fredoka ---- */
+@font-face {
+  font-family: "Fredoka";
+  src: url("../../assets/fonts/fredoka.woff2") format("woff2");
+  font-weight: 400 600; font-style: normal; font-display: swap;
+}
+
+/* ---- Brand tokens ---- */
+:root {
+  --c-primary:   #E60F63;
+  --c-secondary: #20BBA7;
+  --c-tertiary:  #F9730C;
+  --c-ink:       #0A1318;
+  --c-cream:     #F6EDDB;
+  --c-charcoal:  #262722;
+
+  /* semantic — default (light) theme: blog + content pages */
+  --surface:      var(--c-cream);
+  --text:         var(--c-ink);
+  --text-muted:   #5c5346;
+  --heading:      var(--c-primary);
+  --accent:       var(--c-primary);
+  --navbar-bg:    var(--c-ink);
+  --navbar-text:  var(--c-cream);
+  --card-line:    rgba(10,19,24,.12);
+
+  --radius: 8px;
+  --font-body: "Fredoka", system-ui, "Segoe UI", sans-serif;
+}
+
+/* ---- Dark theme: album/EP pages ---- */
+body.album {
+  --surface:     var(--c-charcoal);
+  --text:        var(--c-cream);
+  --text-muted:  #b7ae9c;
+  --navbar-bg:   var(--c-primary);
+  --navbar-text: #ffffff;
+  --card-line:   rgba(246,237,219,.14);
+}
+
+/* ---- Base ---- */
+body {
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+h1, h2, h3, h4 { font-family: var(--font-body); font-weight: 600; }
+h1 { color: var(--heading); }
+a { color: var(--accent); }
+a:hover, a:focus { color: var(--accent); }
