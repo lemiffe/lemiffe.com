@@ -4,6 +4,15 @@ Gemfile
 Gemfile.lock
 .bundle/
 
+# Generated planning / AI assistant files (not committed) #
+##########################################################
+.superpowers/
+docs/superpowers/
+.claude/
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+
 # Compiled source #
 ###################
 *.com
