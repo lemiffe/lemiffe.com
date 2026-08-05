@@ -1,74 +1,8 @@
 ---
 layout: default
 title: FRUTAL
+body_class: album
 ---
-
-<style type="text/css">
-    .col-container {
-        display: grid;
-        grid-gap: 20px;
-        width: 100%;
-        justify-items: left;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-        margin-bottom: 45px;
-    }
-
-    .col {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        object-fit: scale-down;
-        height: fit-content;
-        line-height: 32px;
-    }
-
-    .title {
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 34px;
-    }
-
-    .subtitle {
-        background-color: #333333;
-        padding: 6px 15px;
-        color: #ffffff;
-        display: inline-block;
-        font-size: 13px;
-        font-weight: bold;
-        font-family: sans-serif;
-    }
-
-    h2 {
-        background-color: #333333;
-        padding: 7px 15px;
-        color: #ffffff;
-        display: block;
-        font-weight: bold;
-        font-family: sans-serif;
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-size: 1.2em;
-        width: 100%;
-    }
-
-    .col .name {
-        margin-left: 20px;
-        display: block;
-    }
-
-    .col audio {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .col a{
-        margin-right: 15px;
-    }
-    
-    .col-container .icon::before {
-        color: #222222;
-    }
-</style>
 
 <h3 class="title">FRUTAL, vol. 1</h3>
 <p class="subtitle">AUGUST, 2024</p>
@@ -81,20 +15,20 @@ title: FRUTAL
         <div class="col" style="text-align: center;">
             <img src="{{ site.url }}/assets/media/frutal-cover-500.jpg" />
             <a href="https://open.spotify.com/album/2Zv7nRSraJ35tQNcjacM9s"
-                ><i class="icon icon-social-spotify"></i> Spotify</a
+                >{% include icon.html name="spotify" %} Spotify</a
             >
             <a href="https://music.apple.com/us/album/frutal-vol-1/1757580239"
-                ><i class="icon icon-social-apple"></i> Apple
+                >{% include icon.html name="apple" %} Apple
                 Music</a
             >
             <a href="https://lemiffe.gumroad.com/l/frutal"
-                ><i class="icon icon-music"></i> Purchase</a
+                >{% include icon.html name="purchase" %} Purchase</a
             >
             <a href="https://soundcloud.com/lemiffe/sets/frutal"
                 ><i class="icon icon-cloud"></i> SoundCloud</a
             >
             <a href="https://lemiffe.bandcamp.com/album/frutal-vol-1"
-                ><i class="icon icon-minus"></i> Bandcamp</a
+                >{% include icon.html name="bandcamp" %} Bandcamp</a
             >
             <a href="https://www.youtube.com/watch?v=i5A96K-ot8Q&list=PLyB5_CB1c2ufVrMCJHI9llbVD2b-11rNI">
                 <i class="icon icon-social-youtube"></i> YouTube

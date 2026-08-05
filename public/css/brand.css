@@ -61,3 +61,47 @@ a:hover, a:focus { color: var(--accent); }
 
 /* ---- Inline SVG icons ---- */
 .icon { display: inline-block; vertical-align: -0.125em; width: 1em; height: 1em; fill: currentColor; }
+
+/* ---- Album page components (scoped) ---- */
+body.album .title {
+  font-family: var(--font-body); font-weight: 600;
+  letter-spacing: 2px; font-size: 34px; color: var(--heading);
+  margin: 24px 0 10px;
+}
+body.album .subtitle {
+  display: inline-block; background: var(--c-secondary); color: #04211d;
+  padding: 6px 15px; font-size: 15px; font-weight: 600; letter-spacing: 2px;
+  border-radius: var(--radius);
+}
+body.album .masthead-description { margin-top: 22px; line-height: 1.65; }
+body.album h2 {
+  background: var(--c-charcoal); color: var(--c-cream);
+  border: 1px solid var(--card-line);
+  padding: 7px 15px; font-weight: 600; letter-spacing: 2px;
+  margin: 0 0 20px; font-size: 1.2em; width: 100%;
+}
+body.album .col-container {
+  display: grid; grid-gap: 20px; width: 100%; justify-items: left;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+  margin-bottom: 45px;
+}
+body.album .col { display: flex; flex-direction: column; height: fit-content; line-height: 32px; }
+body.album .col img { max-width: 100%; border-radius: var(--radius); }
+body.album .col .name { display: block; font-weight: 600; margin: 8px 0 4px; }
+body.album .col audio { width: 100%; margin-bottom: 10px; }
+
+/* social/link buttons */
+body.album .social-links { margin: 22px 0 25px; display: flex; flex-wrap: wrap; gap: 8px; }
+body.album .social-links a {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--c-primary); color: #fff;
+  font-weight: 600; letter-spacing: 2px; font-size: 15px;
+  padding: 7px 14px; border-radius: var(--radius);
+  text-decoration: none; transition: filter .2s, transform .2s;
+}
+body.album .social-links a:hover, body.album .social-links a:focus {
+  filter: brightness(1.12); transform: translateY(-1px); text-decoration: none;
+}
+/* accent rotation: 2nd teal, 3rd orange */
+body.album .social-links a:nth-child(2) { background: var(--c-secondary); color: #04211d; }
+body.album .social-links a:nth-child(3) { background: var(--c-tertiary); color: #2a1400; }
