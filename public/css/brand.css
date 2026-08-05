@@ -95,7 +95,7 @@ body.album .social-links { margin: 22px 0 25px; display: flex; flex-wrap: wrap; 
 body.album .social-links a {
   display: inline-flex; align-items: center; gap: 7px;
   background: var(--c-primary); color: #fff;
-  font-weight: 600; letter-spacing: 2px; font-size: 15px;
+  font-weight: 600; letter-spacing: 2px; font-size: 15px; text-transform: uppercase;
   padding: 7px 14px; border-radius: var(--radius);
   text-decoration: none; transition: filter .2s, transform .2s;
 }
