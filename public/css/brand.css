@@ -105,3 +105,8 @@ body.album .social-links a:hover, body.album .social-links a:focus {
 /* accent rotation: 2nd teal, 3rd orange */
 body.album .social-links a:nth-child(2) { background: var(--c-secondary); color: #04211d; }
 body.album .social-links a:nth-child(3) { background: var(--c-tertiary); color: #2a1400; }
+
+/* ---- Blog + content (light theme) polish ---- */
+.page-title,
+.post-title,
+.post-title a { color: var(--heading); }
