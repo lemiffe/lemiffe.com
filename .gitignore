@@ -13,6 +13,10 @@ CLAUDE.md
 GEMINI.md
 AGENTS.md
 
+# Local dev preview helpers
+_config_dev.yml
+.jekyll-dev-site/
+
 # Compiled source #
 ###################
 *.com
