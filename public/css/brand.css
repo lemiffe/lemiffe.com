@@ -20,7 +20,7 @@
   --c-charcoal:  #262722;
 
   /* semantic — default (light) theme: blog + content pages */
-  --surface:      var(--c-cream);
+  --surface:      #f5f2ea;
   --text:         var(--c-ink);
   --text-muted:   #5c5346;
   --heading:      var(--c-primary);
@@ -87,7 +87,7 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 /* ---- Album page components (scoped) ---- */
 body.album .title {
   font-family: var(--font-head); font-weight: 900;
-  letter-spacing: 1px; font-size: 34px; color: var(--heading);
+  letter-spacing: 0; font-size: 34px; color: var(--heading);
   margin: 24px 0 10px;
 }
 body.album .subtitle {
@@ -137,4 +137,8 @@ body.album .social-links a:has(.icon-bandcamp) { background: var(--c-secondary);
 /* ---- Blog + content (light theme) polish ---- */
 .page-title,
 .post-title,
-.post-title a { color: var(--heading); }
+.post-title a { color: var(--heading); letter-spacing: 0; }
+.post-date { color: var(--c-charcoal); font-size: 0.8rem; }
+input[type="text"], input[type="email"], input[type="number"], input[type="search"], textarea {
+  background-color: #ffffff;
+}
