@@ -63,14 +63,15 @@ a:hover, a:focus { color: var(--accent); }
   padding-bottom: 0.1rem;
 }
 .masthead .container { display: block; text-align: center; }
-.masthead-brand { display: inline-block; line-height: 0; }
+.masthead-brand { display: inline-block; line-height: 0; padding-top: 7px; padding-bottom: 3px; }
 .masthead-brand:hover, .masthead-brand:focus { text-decoration: none; }
 .wordmark { height: 24px; width: auto; display: block; margin: 0; border-radius: 0; }
 
 /* sidebar toggle (fixed, top-left, floats over the navbar) */
-.sidebar-toggle { padding: .25rem .35rem; top: 0.4rem; }
+.sidebar-toggle { padding: .25rem .35rem; top: 6px; }
+.sidebar-toggle::before { width: 28px; height: 28px; }
 @media (max-width: 607px) {
-  .sidebar-toggle { top: 0.55rem; }
+  .sidebar-toggle { top: 5px; }
 }
 
 /* ---- Sidebar (drop Lanyon's PT Sans; use the body font) ---- */
