@@ -1,8 +1,13 @@
-/* ---- Self-hosted Fredoka ---- */
+/* ---- Self-hosted fonts: Roboto (headings, Black) + Roboto Slab (body) ---- */
 @font-face {
-  font-family: "Fredoka";
-  src: url("../../assets/fonts/fredoka.woff2") format("woff2");
-  font-weight: 400 600; font-style: normal; font-display: swap;
+  font-family: "Roboto";
+  src: url("../../assets/fonts/roboto.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/roboto-slab.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap;
 }
 
 /* ---- Brand tokens ---- */
@@ -25,7 +30,8 @@
   --card-line:    rgba(10,19,24,.12);
 
   --radius: 8px;
-  --font-body: "Fredoka", system-ui, "Segoe UI", sans-serif;
+  --font-head: "Roboto", system-ui, Arial, sans-serif;          /* used at 900 (Black) */
+  --font-body: "Roboto Slab", Georgia, "Times New Roman", serif;
 }
 
 /* ---- Dark theme: album/EP pages ---- */
@@ -38,13 +44,13 @@ body.album {
   --card-line:   rgba(246,237,219,.14);
 }
 
-/* ---- Base ---- */
+/* ---- Base typography (Roboto Slab is the default everywhere) ---- */
+html, body { font-family: var(--font-body); }
 body {
   background: var(--surface);
   color: var(--text);
-  font-family: var(--font-body);
 }
-h1, h2, h3, h4 { font-family: var(--font-body); font-weight: 600; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-head); font-weight: 900; }
 h1 { color: var(--heading); }
 a { color: var(--accent); }
 a:hover, a:focus { color: var(--accent); }
@@ -53,58 +59,79 @@ a:hover, a:focus { color: var(--accent); }
 .masthead {
   background: var(--navbar-bg);
   border-bottom: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.1rem;
 }
-.masthead .container { display: flex; align-items: center; }
-.masthead-brand { display: inline-flex; padding: 14px 0; line-height: 0; }
+.masthead .container { display: block; text-align: center; }
+.masthead-brand { display: inline-block; line-height: 0; }
 .masthead-brand:hover, .masthead-brand:focus { text-decoration: none; }
-.wordmark { height: 24px; width: auto; display: block; }
+.wordmark { height: 24px; width: auto; display: block; margin: 0; border-radius: 0; }
+
+/* sidebar toggle (fixed, top-left, floats over the navbar) */
+.sidebar-toggle { padding: .25rem .35rem; top: 0.4rem; }
+@media (max-width: 607px) {
+  .sidebar-toggle { top: 0.55rem; }
+}
+
+/* ---- Sidebar (drop Lanyon's PT Sans; use the body font) ---- */
+.sidebar, .sidebar-nav, .sidebar-item, .sidebar-nav-item { font-family: var(--font-body); }
+.sidebar-nav-item:hover, .sidebar-nav-item:focus {
+  background: var(--c-primary);
+  color: #fff;
+}
 
 /* ---- Inline SVG icons ---- */
 .icon { display: inline-block; vertical-align: -0.125em; width: 1em; height: 1em; fill: currentColor; }
 
 /* ---- Album page components (scoped) ---- */
 body.album .title {
-  font-family: var(--font-body); font-weight: 600;
-  letter-spacing: 2px; font-size: 34px; color: var(--heading);
+  font-family: var(--font-head); font-weight: 900;
+  letter-spacing: 1px; font-size: 34px; color: var(--heading);
   margin: 24px 0 10px;
 }
 body.album .subtitle {
   display: inline-block; background: var(--c-secondary); color: #04211d;
-  padding: 6px 15px; font-size: 15px; font-weight: 600; letter-spacing: 2px;
+  font-family: var(--font-head); font-weight: 700;
+  padding: 6px 15px; font-size: 14px; letter-spacing: 1px;
   border-radius: var(--radius);
 }
 body.album .masthead-description { margin-top: 22px; line-height: 1.65; }
 body.album h2 {
-  background: var(--c-charcoal); color: var(--c-cream);
-  border: 1px solid var(--card-line);
-  padding: 7px 15px; font-weight: 600; letter-spacing: 2px;
+  background: #4f5148; color: var(--c-cream); border: 0;
+  padding: 8px 20px; font-weight: 600; letter-spacing: 2px;
   margin: 0 0 20px; font-size: 1.2em; width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); border-radius: 5px;
 }
 body.album .col-container {
   display: grid; grid-gap: 20px; width: 100%; justify-items: left;
   grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
   margin-bottom: 45px;
 }
-body.album .col { display: flex; flex-direction: column; height: fit-content; line-height: 32px; }
+body.album .col { display: flex; flex-direction: column; height: fit-content; }
 body.album .col img { max-width: 100%; border-radius: var(--radius); }
-body.album .col .name { display: block; font-weight: 600; margin: 8px 0 4px; }
-body.album .col audio { width: 100%; margin-bottom: 10px; }
+body.album .col .name { display: block; font-family: var(--font-head); font-weight: 700; margin: 12px 0 5px; }
+body.album .col audio { width: 100%; margin: 0 0 6px; }
+/* collapse the stray empty paragraphs left by the old <p><div> track markup */
+body.album .col p { margin: 0; }
+body.album .col p:empty { display: none; }
 
-/* social/link buttons */
+/* ---- Social / link buttons ---- */
 body.album .social-links { margin: 22px 0 25px; display: flex; flex-wrap: wrap; gap: 8px; }
 body.album .social-links a {
   display: inline-flex; align-items: center; gap: 7px;
   background: var(--c-primary); color: #fff;
-  font-weight: 600; letter-spacing: 2px; font-size: 15px; text-transform: uppercase;
+  font-family: var(--font-head); font-weight: 700;
+  letter-spacing: 1.5px; font-size: 14px; text-transform: uppercase;
   padding: 7px 14px; border-radius: var(--radius);
   text-decoration: none; transition: filter .2s, transform .2s;
 }
 body.album .social-links a:hover, body.album .social-links a:focus {
-  filter: brightness(1.12); transform: translateY(-1px); text-decoration: none;
+  filter: brightness(1.08); transform: translateY(-1px); text-decoration: none;
 }
-/* accent rotation: 2nd teal, 3rd orange */
-body.album .social-links a:nth-child(2) { background: var(--c-secondary); color: #04211d; }
-body.album .social-links a:nth-child(3) { background: var(--c-tertiary); color: #2a1400; }
+/* brand-specific colours, keyed to the icon so order doesn't matter */
+body.album .social-links a:has(.icon-spotify)  { background: #1DB954; color: #04220f; }
+body.album .social-links a:has(.icon-apple)    { background: #c9ced4; color: #1a1a1a; }
+body.album .social-links a:has(.icon-bandcamp) { background: var(--c-secondary); color: #04211d; }
 
 /* ---- Blog + content (light theme) polish ---- */
 .page-title,
