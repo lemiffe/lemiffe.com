@@ -139,6 +139,9 @@ body.album .social-links a:has(.icon-bandcamp) { background: var(--c-secondary);
 .post-title,
 .post-title a { color: var(--heading); letter-spacing: 0; }
 .post-date { color: var(--c-charcoal); font-size: 0.8rem; }
+/* Related posts: body-sized titles and an on-brand date colour */
+.related-posts h3 { font-size: 1em; }
+.related-posts li small { color: var(--c-charcoal); }
 /* keep the green (Spotify) button legible on hover — the global a:hover
    turns link text pink, which is wrong on a solid green fill */
 a.button.green:hover, a.button.green:focus { background-color: #189a48; color: #fff; }
