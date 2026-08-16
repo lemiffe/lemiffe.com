@@ -1,6 +1,6 @@
 title: LEMIFFE
 tagline: Music, Software & Stories
-description: "Lemiffe is a musician/producer from MX, UK and BE making Alt. Rock and Rock Fusion"
+description: "Lemiffe is a musician & producer from MX, UK and BE making Alt. Rock and Rock Fusion"
 url: https://lemiffe.com
 baseurl: ""
 paginate: 5
@@ -21,6 +21,8 @@ exclude:
     - docs
     - .superpowers
     - _tmp_design
+    - .jekyll-dev-site
+    - _config_dev.yml
     - README.md
     - LICENSE
 

@@ -85,23 +85,31 @@ function runIntro() {
     }
 
     const tl = createTimeline({ defaults: { ease: "inOutQuad" } });
-    tl.add(skullTop, { translateY: -200, duration: 1500 }, 1300);
-    tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 1300);
-    tl.add(skull, { opacity: [1, 0], duration: 900 }, 2500);
+    tl.add(skullTop, { translateY: -200, duration: 1500 }, 2300);
+    tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 2300);
+    tl.add(skull, { opacity: [1, 0], duration: 900 }, 3500);
 
-    setTimeout(reveal, 1500);
+    setTimeout(reveal, 2700);
 }
 
 let reduceMotion = false;
 try {
-    reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+    ).matches;
 } catch (e) {}
 let seen = false;
 try {
     seen = !!sessionStorage.getItem("introSeen");
 } catch (e) {}
 
-if (reduceMotion || seen || !skull || !loader) {
+// Any hash in the URL (e.g. /#) forces the intro and ignores the
+// once-per-session flag + reduced-motion — handy for debugging.
+const forceIntro = location.href.indexOf("#") !== -1;
+
+if (!skull || !loader) {
+    skip();
+} else if (!forceIntro && (reduceMotion || seen)) {
     skip();
 } else {
     const safety = setTimeout(skip, 12000);
