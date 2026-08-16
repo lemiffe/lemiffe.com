@@ -12,81 +12,106 @@ const segs = [...document.querySelectorAll(".loader__seg")];
 let revealed = false;
 
 function reveal() {
-  if (revealed) return;
-  revealed = true;
-  nav && nav.classList.add("is-visible");
-  toggle && toggle.classList.add("is-visible");
-  try { sessionStorage.setItem("introSeen", "1"); } catch (e) {}
+    if (revealed) return;
+    revealed = true;
+    nav && nav.classList.add("is-visible");
+    toggle && toggle.classList.add("is-visible");
+    try {
+        sessionStorage.setItem("introSeen", "1");
+    } catch (e) {}
 }
 
 function skip() {
-  if (loader) loader.remove();
-  if (skull) skull.style.display = "none";
-  reveal();
+    if (loader) loader.remove();
+    if (skull) skull.style.display = "none";
+    reveal();
 }
 
 async function fetchToObjectURL(url, onProgress) {
-  const res = await fetch(url);
-  const total = Number(res.headers.get("Content-Length")) || 0;
-  const reader = res.body.getReader();
-  const chunks = [];
-  let loaded = 0;
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-    loaded += value.length;
-    onProgress(loaded, total);
-  }
-  return URL.createObjectURL(new Blob(chunks));
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("HTTP " + res.status + " for " + url);
+    const total = Number(res.headers.get("Content-Length")) || 0;
+    const reader = res.body.getReader();
+    const chunks = [];
+    let loaded = 0;
+    for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        loaded += value.length;
+        onProgress(loaded, total);
+    }
+    return URL.createObjectURL(new Blob(chunks));
 }
 
 async function runLoader() {
-  const assets = [];
-  if (video && video.dataset.src) assets.push({ el: video, url: video.dataset.src, isVideo: true });
-  imgs.forEach((img) => assets.push({ el: img, url: img.dataset.src }));
-  const state = assets.map(() => ({ loaded: 0, total: 0 }));
+    const assets = [];
+    if (video && video.dataset.src)
+        assets.push({ el: video, url: video.dataset.src, isVideo: true });
+    imgs.forEach((img) => assets.push({ el: img, url: img.dataset.src }));
+    const state = assets.map(() => ({ loaded: 0, total: 0 }));
 
-  const paint = () => {
-    const total = state.reduce((s, a) => s + a.total, 0);
-    const loaded = state.reduce((s, a) => s + a.loaded, 0);
-    const p = total ? loaded / total : 0;
-    const on = Math.floor(p * segs.length);
-    segs.forEach((seg, i) => seg.classList.toggle("is-on", i < on));
-  };
+    const paint = () => {
+        const total = state.reduce((s, a) => s + a.total, 0);
+        const loaded = state.reduce((s, a) => s + a.loaded, 0);
+        const p = total ? loaded / total : 0;
+        const on = Math.floor(p * segs.length);
+        segs.forEach((seg, i) => seg.classList.toggle("is-on", i < on));
+    };
 
-  const urls = await Promise.all(
-    assets.map((a, i) =>
-      fetchToObjectURL(a.url, (l, t) => { state[i].loaded = l; state[i].total = t; paint(); })
-    )
-  );
-  assets.forEach((a, i) => {
-    a.el.src = urls[i];
-    if (a.isVideo) a.el.load();
-  });
-  segs.forEach((seg) => seg.classList.add("is-on"));
+    const urls = await Promise.all(
+        assets.map((a, i) =>
+            fetchToObjectURL(a.url, (l, t) => {
+                state[i].loaded = l;
+                state[i].total = t;
+                paint();
+            }),
+        ),
+    );
+    assets.forEach((a, i) => {
+        a.el.src = urls[i];
+        if (a.isVideo) a.el.load();
+    });
+    segs.forEach((seg) => seg.classList.add("is-on"));
 }
 
 function runIntro() {
-  animate(loader, { opacity: [1, 0], duration: 400, ease: "inOutQuad" });
-  setTimeout(() => loader && loader.remove(), 450);
-  if (video) { const p = video.play(); if (p && p.catch) p.catch(() => {}); }
+    if (revealed) return; // skip()/safety-timeout already ran; don't animate a hidden skull
+    animate(loader, { opacity: [1, 0], duration: 400, ease: "inOutQuad" });
+    setTimeout(() => loader && loader.remove(), 450);
+    if (video) {
+        const p = video.play();
+        if (p && p.catch) p.catch(() => {});
+    }
 
-  const tl = createTimeline({ defaults: { ease: "inOutQuad" } });
-  tl.add(skullTop, { translateY: -200, duration: 1500 }, 300);
-  tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 300);
-  tl.add(skull, { opacity: [1, 0], duration: 900 }, 1500);
+    const tl = createTimeline({ defaults: { ease: "inOutQuad" } });
+    tl.add(skullTop, { translateY: -200, duration: 1500 }, 1300);
+    tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 1300);
+    tl.add(skull, { opacity: [1, 0], duration: 900 }, 2500);
 
-  setTimeout(reveal, 1500);
+    setTimeout(reveal, 1500);
 }
 
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let reduceMotion = false;
+try {
+    reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+} catch (e) {}
 let seen = false;
-try { seen = !!sessionStorage.getItem("introSeen"); } catch (e) {}
+try {
+    seen = !!sessionStorage.getItem("introSeen");
+} catch (e) {}
 
 if (reduceMotion || seen || !skull || !loader) {
-  skip();
+    skip();
 } else {
-  const safety = setTimeout(skip, 12000);
-  runLoader().then(() => { clearTimeout(safety); runIntro(); }).catch(() => { clearTimeout(safety); skip(); });
+    const safety = setTimeout(skip, 12000);
+    runLoader()
+        .then(() => {
+            clearTimeout(safety);
+            runIntro();
+        })
+        .catch(() => {
+            clearTimeout(safety);
+            skip();
+        });
 }
