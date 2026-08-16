@@ -5,7 +5,7 @@ title: About
 
 Lemiffe is a songwriter and producer from the UK and Mexico, who currently lives in Belgium as of 2014.
 
-Having written over 15 albums and EPs, his goal is to produce a large body of work combining multiple genres and themes, such as sociology, psychology, technology, AI, addiction and death.
+Having written over 20 albums and EPs, his goal is to produce a large body of distinctive and original work, combining multiple genres and themes, such as sociology, psychology, technology, AI, addiction, time, and death.
 
 Lemiffe started composing music in September, 2001, just after acquiring his first guitar. The following year he founded the band Distortion in the Mid Range alongside his sister and two friends, with whom he performed for the following five years.
 
@@ -17,23 +17,23 @@ While most of his music is guitar-centric, he’ll often compose songs based on 
 
 Some of the topics his music explores include time, the effects of AI on humanity, freedom and its effect on the mind, existentialism, chaos and order, separation and loss, mental health, exploring new lands, geography, parallels between computer science and life, space travel, and stories about humans in odd situations.
 
-When he's not writing music he's writing stories, code, and making videos.
+When he's not writing music he's writing stories, code, art, and making videos.
 
 **You can find Lemiffe's work on the following sites:**
 
--   [Instagram](https://instagram.com/lemiffe) - Music and Photography
--   [Threads](https://threads.net/@lemiffe) - Music-specific discussions
--   [YouTube](https://youtube.com/lemiffe) - Music channel (main)
--   [YouTube](https://www.youtube.com/@lemonific) - Gaming channel
--   [YouTube](https://www.youtube.com/@bellmanrunning) - Running channel
--   [X](https://x.com/lemiffe) - _AKA_ Twitter
--   [Spotify](https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw)
--   [Apple Music](https://music.apple.com/us/artist/lemiffe/457600639)
--   [Soundcloud](https://soundcloud.com/lemiffe)
--   [Bandcamp](https://lemiffe.bandcamp.com/) - Support my music by buying it in high quality
--   [Gumroad](https://lemiffe.gumroad.com/) - Buy my music directly
--   [Medium](https://medium.com/@lemiffe) - Blog for coding and other non-music matters
--   [Github](https://github.com/lemiffe) - Public code repositories
+- [Instagram](https://instagram.com/lemiffe) - Music and Photography
+- [Threads](https://threads.net/@lemiffe) - Music-related posts and discussions
+- [YouTube](https://youtube.com/lemiffe) - Music channel (main)
+- [YouTube](https://www.youtube.com/@lemonific) - Gaming channel
+- [YouTube](https://www.youtube.com/@bellmanrunning) - Running channel (inactive)
+- [Spotify](https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw)
+- [Apple Music](https://music.apple.com/us/artist/lemiffe/457600639)
+- [Bandcamp](https://lemiffe.bandcamp.com/) - Support Lemiffe by buying high quality tracks
+- [Gumroad](https://lemiffe.gumroad.com/) - Buy Lemiffe's music directly
+- [Soundcloud](https://soundcloud.com/lemiffe) -Some of Lemiffe's tracks (incl. unreleased)
+- [Medium](https://medium.com/@lemiffe) - Blog for coding and other non-music matters
+- [Github](https://github.com/lemiffe) - Public code repositories
+- [X](https://x.com/lemiffe) - Mostly abandoned (in favour of Threads)
 
 ## Newsletter
 
