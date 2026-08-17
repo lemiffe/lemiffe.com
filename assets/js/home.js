@@ -25,8 +25,25 @@ function reveal() {
 function skip() {
     if (loader) loader.remove();
     if (skull) skull.style.display = "none";
-    if (bg) bg.style.opacity = "1";
     reveal();
+    // Even without the full intro (reload / reduced-motion), fade the tiled
+    // background in and then start the ambient loop.
+    if (bg) {
+        animate(bg, { opacity: [0, 1], duration: 1200, ease: "inOutQuad" });
+        setTimeout(startBgLoop, 1200);
+    }
+}
+
+// Ambient loop on the tiled background: pause 2s, then simultaneously
+// bounce-zoom (10% out on ease-out, back in on ease-in) and rotate 15deg
+// clockwise and back (ease-in-out). Repeats forever.
+function startBgLoop() {
+    if (!bg) return;
+    const loop = createTimeline({ loop: true });
+    loop.add(bg, { scale: [1, 1.1], duration: 1000, ease: "outQuad" }, 2000);
+    loop.add(bg, { rotate: [0, 15], duration: 1000, ease: "inOutQuad" }, 2000);
+    loop.add(bg, { scale: [1.1, 1], duration: 1000, ease: "inQuad" }, 3000);
+    loop.add(bg, { rotate: [15, 0], duration: 1000, ease: "inOutQuad" }, 3000);
 }
 
 async function fetchToObjectURL(url, onProgress) {
@@ -92,6 +109,8 @@ function runIntro() {
     tl.add(skull, { opacity: [1, 0], duration: 900 }, 3500);
     // Slow fade-in of the tiled background behind the nav as the skull dissolves.
     if (bg) tl.add(bg, { opacity: [0, 1], duration: 3000 }, 3500);
+    // Once the fade completes, kick off the ambient bounce/rotate loop.
+    if (bg) setTimeout(startBgLoop, 6500);
 
     setTimeout(reveal, 2700);
 }

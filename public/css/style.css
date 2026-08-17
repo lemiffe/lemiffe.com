@@ -252,6 +252,7 @@ html.skullpage body {
     width: 150%;
     height: 150%;
     background: url("../../assets/brand/bg-tile.png") repeat;
+    background-size: 49px 49px; /* half of the 98x98 tile */
     z-index: 0;
     opacity: 0;
     pointer-events: none;
@@ -263,7 +264,7 @@ html.skullpage body {
 .linktree__link {
     display: flex; align-items: center; gap: 14px;
     padding: clamp(6px, 1.4vh, 12px) 18px; border-radius: 10px;
-    background: rgba(246, 237, 219, .06);
+    background: rgb(20 20 20 / 45%);
     border: 2px solid var(--c-cream);
     color: var(--c-cream);
     font-family: var(--font-head); font-weight: 700;
