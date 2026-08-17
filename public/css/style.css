@@ -242,6 +242,21 @@ html.skullpage body {
 }
 .loader__seg.is-on { background: #ffffff; }
 
+/* Tiled pattern background behind the linktree. Starts hidden and is faded
+   in by home.js as the skull dissolves. Sized 150% and centred (overflowing
+   the viewport) so a later zoom/rotate animation has room to move. */
+.bg-pattern {
+    position: fixed;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    background: url("../../assets/brand/bg-tile.png") repeat;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Linktree */
 .linktree { list-style: none; margin: 0; padding: 0; width: min(88vw, 280px); }
 .linktree__item { margin: clamp(4px, 1.3vh, 10px) 0; }

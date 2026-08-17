@@ -5,12 +5,27 @@ title: Home
 
 <noscript>
     <style>
-        .loader { display: none !important; }
-        .skull { display: none !important; }
-        .navigation-container { opacity: 1 !important; pointer-events: auto !important; }
-        .skullpage .sidebar-toggle { opacity: 1 !important; pointer-events: auto !important; }
+        .loader {
+            display: none !important;
+        }
+        .skull {
+            display: none !important;
+        }
+        .navigation-container {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+        }
+        .skullpage .sidebar-toggle {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+        }
+        .bg-pattern {
+            opacity: 1 !important;
+        }
     </style>
 </noscript>
+
+<div class="bg-pattern"></div>
 
 <div class="loader" id="loader">
     <div class="loader__bar">
@@ -28,9 +43,23 @@ title: Home
 <div class="fullscreen-outer-container">
     <div class="fullscreen-container">
         <div class="skull">
-            <video muted loop playsinline height="640" data-src="{{ site.url }}/assets/brand/fire.mp4"></video>
-            <img class="skull-bottom" data-src="{{ site.url }}/assets/brand/brandmark-solo-bottom.png" alt="" />
-            <img class="skull-top" data-src="{{ site.url }}/assets/brand/brandmark-solo-top.png" alt="" />
+            <video
+                muted
+                loop
+                playsinline
+                height="640"
+                data-src="{{ site.url }}/assets/brand/fire.mp4"
+            ></video>
+            <img
+                class="skull-bottom"
+                data-src="{{ site.url }}/assets/brand/brandmark-solo-bottom.png"
+                alt=""
+            />
+            <img
+                class="skull-top"
+                data-src="{{ site.url }}/assets/brand/brandmark-solo-top.png"
+                alt=""
+            />
         </div>
     </div>
 </div>
@@ -39,54 +68,117 @@ title: Home
     <div class="fullscreen-container">
         <div class="navigation-container">
             <div class="navigation-wrapper">
-                <img src="{{ site.url }}/assets/brand/logo-white.svg" alt="Lemiffe" class="logo" />
+                <img
+                    src="{{ site.url }}/assets/brand/logo-white.svg"
+                    alt="Lemiffe"
+                    class="logo"
+                />
                 <nav class="cover-navigation">
                     <ul class="linktree">
                         <li class="linktree__item">
-                            <a class="linktree__link" href="{{ site.url }}/2009" title="Listen to the last Lemiffe EP: 2009">
-                                <span class="linktree__icon">{% include icon.html name="music" %}</span>
-                                <span class="linktree__label">Last EP: 2009</span>
+                            <a
+                                class="linktree__link"
+                                href="{{ site.url }}/2009"
+                                title="Listen to the last Lemiffe EP: 2009"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="music" %}</span
+                                >
+                                <span class="linktree__label"
+                                    >Last EP: 2009</span
+                                >
                             </a>
                         </li>
                         <li class="linktree__item">
-                            <a class="linktree__link" href="https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw" title="Lemiffe on Spotify" target="_blank" rel="noopener">
-                                <span class="linktree__icon">{% include icon.html name="spotify" %}</span>
+                            <a
+                                class="linktree__link"
+                                href="https://open.spotify.com/artist/1sNv7hQSMw29Gxn7CNMbko?si=RAMQ-gHMSUOUmi39xYswHw"
+                                title="Lemiffe on Spotify"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="spotify"
+                                    %}</span
+                                >
                                 <span class="linktree__label">Spotify</span>
                             </a>
                         </li>
                         <li class="linktree__item">
-                            <a class="linktree__link" href="http://youtube.com/lemiffe" title="Lemiffe on YouTube" target="_blank" rel="noopener">
-                                <span class="linktree__icon">{% include icon.html name="youtube" %}</span>
+                            <a
+                                class="linktree__link"
+                                href="http://youtube.com/lemiffe"
+                                title="Lemiffe on YouTube"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="youtube"
+                                    %}</span
+                                >
                                 <span class="linktree__label">YouTube</span>
                             </a>
                         </li>
                         <li class="linktree__item">
-                            <a class="linktree__link" href="https://lemiffe.bandcamp.com/" title="Bandcamp" target="_blank" rel="noopener">
-                                <span class="linktree__icon">{% include icon.html name="bandcamp" %}</span>
+                            <a
+                                class="linktree__link"
+                                href="https://lemiffe.bandcamp.com/"
+                                title="Bandcamp"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="bandcamp"
+                                    %}</span
+                                >
                                 <span class="linktree__label">Bandcamp</span>
                             </a>
                         </li>
                         <li class="linktree__item">
-                            <a class="linktree__link" href="https://instagram.com/lemiffe" title="Lemiffe on Instagram" target="_blank" rel="noopener">
-                                <span class="linktree__icon">{% include icon.html name="instagram" %}</span>
+                            <a
+                                class="linktree__link"
+                                href="https://instagram.com/lemiffe"
+                                title="Lemiffe on Instagram"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="instagram"
+                                    %}</span
+                                >
                                 <span class="linktree__label">Instagram</span>
                             </a>
                         </li>
                         <li class="linktree__item">
-                            <a class="linktree__link" href="https://threads.net/@lemiffe" title="@lemiffe on Threads" target="_blank" rel="noopener">
-                                <span class="linktree__icon">{% include icon.html name="threads" %}</span>
+                            <a
+                                class="linktree__link"
+                                href="https://threads.net/@lemiffe"
+                                title="@lemiffe on Threads"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="threads"
+                                    %}</span
+                                >
                                 <span class="linktree__label">Threads</span>
                             </a>
                         </li>
-                        <li class="linktree__item">
+                        <!--<li class="linktree__item">
                             <a class="linktree__link" href="https://bsky.app/profile/lemiffe.bsky.social" title="@lemiffe.bsky.social on Bluesky" target="_blank" rel="noopener">
                                 <span class="linktree__icon">{% include icon.html name="bluesky" %}</span>
                                 <span class="linktree__label">Bluesky</span>
                             </a>
-                        </li>
+                        </li>-->
                         <li class="linktree__item">
-                            <a class="linktree__link" href="{{ site.url }}/blog" title="Blog">
-                                <span class="linktree__icon">{% include icon.html name="blog" %}</span>
+                            <a
+                                class="linktree__link"
+                                href="{{ site.url }}/blog"
+                                title="Blog"
+                            >
+                                <span class="linktree__icon"
+                                    >{% include icon.html name="blog" %}</span
+                                >
                                 <span class="linktree__label">Blog</span>
                             </a>
                         </li>

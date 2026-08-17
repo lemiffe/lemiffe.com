@@ -8,6 +8,7 @@ const toggle = document.querySelector(".sidebar-toggle");
 const video = skull ? skull.querySelector("video") : null;
 const imgs = skull ? [...skull.querySelectorAll("img[data-src]")] : [];
 const segs = [...document.querySelectorAll(".loader__seg")];
+const bg = document.querySelector(".bg-pattern");
 
 let revealed = false;
 
@@ -24,6 +25,7 @@ function reveal() {
 function skip() {
     if (loader) loader.remove();
     if (skull) skull.style.display = "none";
+    if (bg) bg.style.opacity = "1";
     reveal();
 }
 
@@ -88,6 +90,8 @@ function runIntro() {
     tl.add(skullTop, { translateY: -200, duration: 1500 }, 2300);
     tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 2300);
     tl.add(skull, { opacity: [1, 0], duration: 900 }, 3500);
+    // Slow fade-in of the tiled background behind the nav as the skull dissolves.
+    if (bg) tl.add(bg, { opacity: [0, 1], duration: 3000 }, 3500);
 
     setTimeout(reveal, 2700);
 }
