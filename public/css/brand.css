@@ -22,12 +22,9 @@
   /* semantic — default (light) theme: blog + content pages */
   --surface:      #f5f2ea;
   --text:         var(--c-ink);
-  --text-muted:   #5c5346;
   --heading:      var(--c-primary);
   --accent:       var(--c-primary);
   --navbar-bg:    var(--c-ink);
-  --navbar-text:  var(--c-cream);
-  --card-line:    rgba(10,19,24,.12);
 
   --radius: 8px;
   --font-head: "Roboto", system-ui, Arial, sans-serif;          /* used at 900 (Black) */
@@ -38,10 +35,7 @@
 body.album {
   --surface:     var(--c-charcoal);
   --text:        var(--c-cream);
-  --text-muted:  #b7ae9c;
   --navbar-bg:   var(--c-primary);
-  --navbar-text: #ffffff;
-  --card-line:   rgba(246,237,219,.14);
 }
 
 /* ---- Base typography (Roboto Slab is the default everywhere) ---- */

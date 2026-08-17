@@ -125,15 +125,6 @@ a.button.green:focus {
         no-repeat !important;
 }
 
-@keyframes slide {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-1596px, 0, 0);
-    }
-}
-
 /* Homepage v2: Skullpage */
 
 html.skullpage,
