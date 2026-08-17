@@ -236,6 +236,20 @@ html.skullpage body {
     z-index: 11;
 }
 
+/* Centre the skull/fire in the viewport. Flexbox is the one centring method
+   that overflows equally on both sides, so in portrait the sides are cut off
+   evenly instead of the whole thing pinning to the left. Scoped via :has()
+   so the linktree screen keeps its own layout. */
+.fullscreen-outer-container:has(.skull) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fullscreen-outer-container:has(.skull) > .fullscreen-container {
+    display: block;
+    width: auto;
+}
+
 /* Game-style asset loader */
 .loader {
     position: fixed;
