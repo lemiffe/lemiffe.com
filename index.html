@@ -19,21 +19,20 @@ title: Home
             opacity: 1 !important;
             pointer-events: auto !important;
         }
-        .bg-pattern {
+        .bg-pattern,
+        .vignette {
             opacity: 1 !important;
         }
     </style>
 </noscript>
 
 <script>
-    // Runs before the loader paints: if the intro has already played (and it
-    // isn't being force-replayed via #), hide the loading bar to avoid a flash.
+    // Runs before the loader paints: once the assets have loaded before
+    // (localStorage flag), hide the loading bar to avoid a flash — on the
+    // skip path AND when force-replaying the intro via #.
     (function () {
         try {
-            if (
-                location.href.indexOf("#") === -1 &&
-                localStorage.getItem("introSeen")
-            ) {
+            if (localStorage.getItem("introSeen")) {
                 document.documentElement.classList.add("skip-intro");
             }
         } catch (e) {}
@@ -41,6 +40,7 @@ title: Home
 </script>
 
 <div class="bg-pattern"></div>
+<div class="vignette"></div>
 
 <div class="loader" id="loader">
     <div class="loader__bar">

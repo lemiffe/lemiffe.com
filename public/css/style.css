@@ -249,15 +249,35 @@ html.skip-intro .loader { display: none; }
    the viewport) so a later zoom/rotate animation has room to move. */
 .bg-pattern {
     position: fixed;
-    top: -25%;
-    left: -25%;
-    width: 150%;
-    height: 150%;
+    /* A square sized to the larger viewport side (vmax), centred without a
+       transform (so it doesn't fight the loop's transform). Big enough that
+       the zoom+rotate never exposes an edge at any aspect ratio. */
+    top: 50%;
+    left: 50%;
+    width: 160vmax;
+    height: 160vmax;
+    margin-top: -80vmax;
+    margin-left: -80vmax;
     background: url("../../assets/brand/bg-tile.png") repeat;
     background-size: 49px 49px; /* half of the 98x98 tile */
     z-index: 0;
     opacity: 0;
     pointer-events: none;
+}
+
+/* Old-timey vignette over the pattern: clear in the middle, darkening to the
+   edges. Fixed to the viewport, above the pattern but below the linktree. */
+.vignette {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
 }
 
 /* Linktree */

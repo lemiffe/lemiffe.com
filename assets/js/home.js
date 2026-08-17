@@ -9,6 +9,7 @@ const video = skull ? skull.querySelector("video") : null;
 const imgs = skull ? [...skull.querySelectorAll("img[data-src]")] : [];
 const segs = [...document.querySelectorAll(".loader__seg")];
 const bg = document.querySelector(".bg-pattern");
+const vignette = document.querySelector(".vignette");
 
 let revealed = false;
 
@@ -32,6 +33,8 @@ function skip() {
         animate(bg, { opacity: [0, 1], duration: 1200, ease: "inOutQuad" });
         setTimeout(startBgLoop, 1200);
     }
+    if (vignette)
+        animate(vignette, { opacity: [0, 1], duration: 1200, ease: "inOutQuad" });
 }
 
 // Ambient loop on the tiled background. Each cycle: pause 2s at the current
@@ -110,8 +113,9 @@ function runIntro() {
     tl.add(skullTop, { translateY: -200, duration: 1500 }, 2300);
     tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 2300);
     tl.add(skull, { opacity: [1, 0], duration: 900 }, 3500);
-    // Slow fade-in of the tiled background behind the nav as the skull dissolves.
+    // Slow fade-in of the tiled background (and vignette over it) as the skull dissolves.
     if (bg) tl.add(bg, { opacity: [0, 1], duration: 3000 }, 3500);
+    if (vignette) tl.add(vignette, { opacity: [0, 1], duration: 3000 }, 3500);
     // Once the fade completes, kick off the ambient bounce/rotate loop.
     if (bg) setTimeout(startBgLoop, 6500);
 
