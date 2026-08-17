@@ -34,7 +34,11 @@ function skip() {
         setTimeout(startBgLoop, 1200);
     }
     if (vignette)
-        animate(vignette, { opacity: [0, 1], duration: 1200, ease: "inOutQuad" });
+        animate(vignette, {
+            opacity: [0, 1],
+            duration: 1200,
+            ease: "inOutQuad",
+        });
 }
 
 // Ambient loop on the tiled background. Each cycle: pause 2s at the current
@@ -46,9 +50,25 @@ function startBgLoop() {
     const loop = createTimeline({ loop: true });
     for (let i = 0; i < 24; i++) {
         const base = i * 4000;
-        loop.add(bg, { scale: [1, 1.1], duration: 1000, ease: "outQuad" }, base + 2000);
-        loop.add(bg, { rotate: [i * 15, (i + 1) * 15], duration: 2000, ease: "inOutQuad" }, base + 2000);
-        loop.add(bg, { scale: [1.1, 1], duration: 1000, ease: "inQuad" }, base + 3000);
+        loop.add(
+            bg,
+            { scale: [1, 1.1], duration: 1000, ease: "outQuad" },
+            base + 2000,
+        );
+        loop.add(
+            bg,
+            {
+                rotate: [i * 15, (i + 1) * 15],
+                duration: 2000,
+                ease: "inOutQuad",
+            },
+            base + 2000,
+        );
+        loop.add(
+            bg,
+            { scale: [1.1, 1], duration: 1000, ease: "inQuad" },
+            base + 3000,
+        );
     }
 }
 
@@ -112,7 +132,7 @@ function runIntro() {
     const tl = createTimeline({ defaults: { ease: "inOutQuad" } });
     tl.add(skullTop, { translateY: -200, duration: 1500 }, 2300);
     tl.add(skull, { scale: [1, 20], translateY: 120, duration: 1500 }, 2300);
-    tl.add(skull, { opacity: [1, 0], duration: 900 }, 3500);
+    tl.add(skull, { opacity: [1, 0], duration: 900 }, 3000);
     // Slow fade-in of the tiled background (and vignette over it) as the skull dissolves.
     if (bg) tl.add(bg, { opacity: [0, 1], duration: 3000 }, 3500);
     if (vignette) tl.add(vignette, { opacity: [0, 1], duration: 3000 }, 3500);

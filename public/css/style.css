@@ -183,14 +183,26 @@ html.skullpage body {
     pointer-events: none;
     transition: opacity 1.1s ease;
 }
-.navigation-container.is-visible { opacity: 1; pointer-events: auto; }
+.navigation-container.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /* decorative — never intercept clicks, even at opacity:0 mid/after fade */
-.skull { pointer-events: none; }
+.skull {
+    pointer-events: none;
+}
 
 /* sidebar toggle fades in with the linktree */
-.skullpage .sidebar-toggle { opacity: 0; pointer-events: none; transition: opacity 1.1s ease; }
-.skullpage .sidebar-toggle.is-visible { opacity: 1; pointer-events: auto; }
+.skullpage .sidebar-toggle {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.1s ease;
+}
+.skullpage .sidebar-toggle.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .navigation-container img.logo {
     max-width: 280px;
@@ -226,23 +238,33 @@ html.skullpage body {
 
 /* Game-style asset loader */
 .loader {
-    position: fixed; inset: 0; z-index: 50;
-    display: flex; align-items: center; justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .loader__bar {
-    display: flex; gap: 6px;
-    padding: 5px;                 /* inset between border and segments */
+    display: flex;
+    gap: 6px;
+    padding: 5px; /* inset between border and segments */
     border: 2px solid #ffffff;
     border-radius: 6px;
 }
 .loader__seg {
-    width: 26px; height: 18px;
+    width: 26px;
+    height: 18px;
     background: transparent;
-    transition: background-color .15s ease;
+    transition: background-color 0.15s ease;
 }
-.loader__seg.is-on { background: #ffffff; }
+.loader__seg.is-on {
+    background: #ffffff;
+}
 /* When the intro has already played, hide the loader before it can paint. */
-html.skip-intro .loader { display: none; }
+html.skip-intro .loader {
+    display: none;
+}
 
 /* Tiled pattern background behind the linktree. Starts hidden and is faded
    in by home.js as the skull dissolves. Sized 150% and centred (overflowing
@@ -276,39 +298,81 @@ html.skip-intro .loader { display: none; }
     background: radial-gradient(
         ellipse at center,
         rgba(0, 0, 0, 0) 45%,
-        rgba(0, 0, 0, 0.3) 100%
+        rgba(0, 0, 0, 0.5) 100%
     );
 }
 
 /* Linktree */
-.linktree { list-style: none; margin: 0; padding: 0; width: min(88vw, 280px); }
-.linktree__item { margin: clamp(4px, 1.3vh, 10px) 0; }
+.linktree {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(88vw, 280px);
+}
+.linktree__item {
+    margin: clamp(4px, 1.3vh, 10px) 0;
+}
 .linktree__link {
-    display: flex; align-items: center; gap: 14px;
-    padding: clamp(6px, 1.4vh, 12px) 18px; border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: clamp(6px, 1.4vh, 12px) 18px;
+    border-radius: 10px;
     background: rgb(20 20 20 / 45%);
     border: 2px solid var(--c-cream);
     color: var(--c-cream);
-    font-family: var(--font-head); font-weight: 700;
-    letter-spacing: 1px; text-transform: uppercase; font-size: 14px;
-    text-decoration: none; transition: transform .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
+    font-family: var(--font-head);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
 }
-.linktree__link:hover, .linktree__link:focus {
-    background: var(--c-primary); border-color: var(--c-primary);
-    color: #fff; transform: translateY(-2px); text-decoration: none;
+.linktree__link:hover,
+.linktree__link:focus {
+    background: var(--c-primary);
+    border-color: var(--c-primary);
+    color: #fff;
+    transform: translateY(-2px);
+    text-decoration: none;
 }
-.linktree__icon { flex: 0 0 auto; width: 22px; height: 22px; display: inline-flex; }
-.linktree__icon .icon { width: 22px; height: 22px; }
-.linktree__label { flex: 1; text-align: center; }
+.linktree__icon {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+}
+.linktree__icon .icon {
+    width: 22px;
+    height: 22px;
+}
+.linktree__label {
+    flex: 1;
+    text-align: center;
+}
 /* highlight the newest release */
 .linktree__item:first-child .linktree__link {
-    background: var(--c-primary); border-color: var(--c-primary); color: #fff;
+    background: var(--c-primary);
+    border-color: var(--c-primary);
+    color: #fff;
 }
-.linktree__item:first-child .linktree__link:hover { filter: brightness(1.08); }
+.linktree__item:first-child .linktree__link:hover {
+    filter: brightness(1.08);
+}
 /* Center the linktree, but let it scroll when it can't fit (short/landscape
    viewports) so every link stays reachable despite the page's overflow:hidden.
    Scoped with :has() so the skull screen keeps its table-cell centering. */
-.fullscreen-outer-container:has(.navigation-container) { display: flex; overflow-y: auto; }
+.fullscreen-outer-container:has(.navigation-container) {
+    display: flex;
+    overflow-y: auto;
+}
 .fullscreen-outer-container:has(.navigation-container) > .fullscreen-container {
-    display: block; margin: auto; padding: 24px 0;
+    display: block;
+    margin: auto;
+    padding: 24px 0;
 }
