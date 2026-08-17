@@ -241,6 +241,8 @@ html.skullpage body {
     transition: background-color .15s ease;
 }
 .loader__seg.is-on { background: #ffffff; }
+/* When the intro has already played, hide the loader before it can paint. */
+html.skip-intro .loader { display: none; }
 
 /* Tiled pattern background behind the linktree. Starts hidden and is faded
    in by home.js as the skull dissolves. Sized 150% and centred (overflowing

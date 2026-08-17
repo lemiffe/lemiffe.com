@@ -25,6 +25,21 @@ title: Home
     </style>
 </noscript>
 
+<script>
+    // Runs before the loader paints: if the intro has already played (and it
+    // isn't being force-replayed via #), hide the loading bar to avoid a flash.
+    (function () {
+        try {
+            if (
+                location.href.indexOf("#") === -1 &&
+                localStorage.getItem("introSeen")
+            ) {
+                document.documentElement.classList.add("skip-intro");
+            }
+        } catch (e) {}
+    })();
+</script>
+
 <div class="bg-pattern"></div>
 
 <div class="loader" id="loader">

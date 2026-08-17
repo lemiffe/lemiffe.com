@@ -18,7 +18,7 @@ function reveal() {
     nav && nav.classList.add("is-visible");
     toggle && toggle.classList.add("is-visible");
     try {
-        sessionStorage.setItem("introSeen", "1");
+        localStorage.setItem("introSeen", "1");
     } catch (e) {}
 }
 
@@ -34,16 +34,19 @@ function skip() {
     }
 }
 
-// Ambient loop on the tiled background: pause 2s, then simultaneously
-// bounce-zoom (10% out on ease-out, back in on ease-in) and rotate 15deg
-// clockwise and back (ease-in-out). Repeats forever.
+// Ambient loop on the tiled background. Each cycle: pause 2s at the current
+// angle, then simultaneously bounce-zoom (10% out ease-out, back in ease-in)
+// and rotate a further 15deg clockwise, LANDING there. 24 cycles accumulate
+// to 360deg, so looping the whole timeline is seamless (360 === 0).
 function startBgLoop() {
     if (!bg) return;
     const loop = createTimeline({ loop: true });
-    loop.add(bg, { scale: [1, 1.1], duration: 1000, ease: "outQuad" }, 2000);
-    loop.add(bg, { rotate: [0, 15], duration: 1000, ease: "inOutQuad" }, 2000);
-    loop.add(bg, { scale: [1.1, 1], duration: 1000, ease: "inQuad" }, 3000);
-    loop.add(bg, { rotate: [15, 0], duration: 1000, ease: "inOutQuad" }, 3000);
+    for (let i = 0; i < 24; i++) {
+        const base = i * 4000;
+        loop.add(bg, { scale: [1, 1.1], duration: 1000, ease: "outQuad" }, base + 2000);
+        loop.add(bg, { rotate: [i * 15, (i + 1) * 15], duration: 2000, ease: "inOutQuad" }, base + 2000);
+        loop.add(bg, { scale: [1.1, 1], duration: 1000, ease: "inQuad" }, base + 3000);
+    }
 }
 
 async function fetchToObjectURL(url, onProgress) {
@@ -123,7 +126,7 @@ try {
 } catch (e) {}
 let seen = false;
 try {
-    seen = !!sessionStorage.getItem("introSeen");
+    seen = !!localStorage.getItem("introSeen");
 } catch (e) {}
 
 // Any hash in the URL (e.g. /#) forces the intro and ignores the
